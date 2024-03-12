@@ -76,7 +76,7 @@ class FBS extends BaseService
     public function exemplars(string $postingNumber): mixed
     {
         return $this->request('POST', "{$this->exPath}/create-or-get", [
-           'posting_number' => $postingNumber
+            'posting_number' => $postingNumber
         ]);
     }
 }
