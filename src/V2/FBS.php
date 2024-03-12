@@ -94,7 +94,7 @@ class FBS extends BaseService
      * @return mixed
      */
     #[Mapping(':path/product/country/list')]
-    public function productCountryList(string $search = '')
+    public function countryList(string $search = '')
     {
         return $this->request('POST', "{$this->path}/product/country/list", [
             'name_search' => $search
@@ -114,7 +114,7 @@ class FBS extends BaseService
      * @return mixed
      */
     #[Mapping(':path/product/country/set')]
-    public function productCountrySet(
+    public function countrySet(
         string $postingNumber,
         int $productId,
         string $countryIso
