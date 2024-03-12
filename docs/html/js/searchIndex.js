@@ -701,20 +701,35 @@ Search.appendIndex(
             "summary": "\u0421\u043E\u0437\u0434\u0430\u0442\u044C\u0020\u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440",
             "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method_make"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003Asingle\u0028\u0029",
-            "name": "single",
-            "summary": "\u0421\u043E\u0437\u0434\u0430\u0442\u044C\u0020\u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440\u0020\u0441\u0020\u043E\u0434\u043D\u0438\u043C\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u043C",
-            "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method_single"
-        },                {
             "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003Aadd\u0028\u0029",
             "name": "add",
             "summary": "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C\u0020\u043D\u043E\u0432\u044B\u0439\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u0432\u0020\u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440",
             "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method_add"
         },                {
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003Acount\u0028\u0029",
+            "name": "count",
+            "summary": "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C\u0020\u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E\u0020\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u044B\u0445\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432",
+            "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method_count"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003Anames\u0028\u0029",
+            "name": "names",
+            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u043D\u0430\u0437\u0432\u0430\u043D\u0438\u044F\u0020\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u044B\u0445\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432",
+            "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method_names"
+        },                {
             "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003A__call\u0028\u0029",
             "name": "__call",
             "summary": "\u0412\u044B\u0437\u043E\u0432\u0020\u043C\u0435\u0442\u043E\u0434\u043E\u0432\u0020\u0438\u0437\u0020\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u044B\u0445\n\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432\u0020\u0028\u0435\u0441\u043B\u0438\u0020\u0435\u0441\u0442\u044C\u0029",
             "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method___call"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003A\u0024clientId",
+            "name": "clientId",
+            "summary": "\u0418\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430",
+            "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#property_clientId"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003A\u0024token",
+            "name": "token",
+            "summary": "\u0422\u043E\u043A\u0435\u043D",
+            "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#property_token"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003A\u0024services",
             "name": "services",
@@ -776,11 +791,6 @@ Search.appendIndex(
             "summary": "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C\u0020\u0447\u0442\u043E\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442",
             "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_hasService"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003Acomposite\u0028\u0029",
-            "name": "composite",
-            "summary": "\u0421\u043A\u043E\u043C\u043F\u043E\u043D\u043E\u0432\u0430\u0442\u044C\u0020\u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432",
-            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_composite"
-        },                {
             "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003Ause\u0028\u0029",
             "name": "use",
             "summary": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0020\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0451\u043D\u043D\u044B\u0439\u0020\u0438\u043D\u0438\u0446\u0438\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439\n\u0441\u0435\u0440\u0432\u0438\u0441",
@@ -801,6 +811,11 @@ Search.appendIndex(
             "summary": "\u0412\u044B\u0437\u043E\u0432\u0020\u043C\u0435\u0442\u043E\u0434\u043E\u0432\u0020\u0438\u0437\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432",
             "url": "classes/Whatis-OzonSeller-ServiceManager.html#method___call"
         },                {
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003A\u0024clientId",
+            "name": "clientId",
+            "summary": "\u0418\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430",
+            "url": "classes/Whatis-OzonSeller-ServiceManager.html#property_clientId"
+        },                {
             "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003A\u0024token",
             "name": "token",
             "summary": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u044B\u0439\u0020\u0442\u043E\u043A\u0435\u043D",
@@ -815,6 +830,11 @@ Search.appendIndex(
             "name": "aliases",
             "summary": "\u0410\u043B\u0438\u0430\u0441\u044B\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432",
             "url": "classes/Whatis-OzonSeller-ServiceManager.html#property_aliases"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003A\u0024compositors",
+            "name": "compositors",
+            "summary": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u044B\u0435\u0020\u043A\u043E\u043C\u043F\u0430\u043D\u043E\u0432\u0449\u0438\u043A\u0438\u0020\u043F\u043E\n\u043D\u0430\u0437\u0432\u0430\u043D\u0438\u044F\u043C\u0020\u0028\u0430\u043B\u0438\u0430\u0441\u0430\u043C\u0029",
+            "url": "classes/Whatis-OzonSeller-ServiceManager.html#property_compositors"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\Utils",
             "name": "Utils",
@@ -901,25 +921,50 @@ Search.appendIndex(
             "summary": "\u041A\u043B\u0430\u0441\u0441\u002D\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u0434\u043B\u044F\u0020\u0440\u0430\u0431\u043E\u0442\u044B\n\u0441\u0020\u0446\u0435\u043D\u0430\u043C\u0438",
             "url": "classes/Whatis-OzonSeller-V1-Prices.html"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\V1\\Prices\u003A\u003AgetPermissions\u0028\u0029",
-            "name": "getPermissions",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u043C\u0430\u0441\u0441\u0438\u0432\u0020\u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u044B\u0445\u0020\u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u0439\n\u0434\u043B\u044F\u0020\u044D\u0442\u043E\u0433\u043E\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0430",
-            "url": "classes/Whatis-OzonSeller-V1-Prices.html#method_getPermissions"
+            "fqsen": "\\Whatis\\OzonSeller\\V1\\Prices\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "\u041E\u0431\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u0446\u0435\u043D\u044B",
+            "url": "classes/Whatis-OzonSeller-V1-Prices.html#method_update"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\V1\\Prices\u003A\u003AbasePath\u0028\u0029",
-            "name": "basePath",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0431\u0430\u0437\u043E\u0432\u044B\u0439\u0020uri",
-            "url": "classes/Whatis-OzonSeller-V1-Prices.html#method_basePath"
+            "fqsen": "\\Whatis\\OzonSeller\\V1\\Stocks",
+            "name": "Stocks",
+            "summary": "\u041A\u043B\u0430\u0441\u0441\u002D\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u0434\u043B\u044F\u0020\u0440\u0430\u0431\u043E\u0442\u044B\n\u0441\u0020\u043E\u0441\u0442\u0430\u0442\u043A\u0430\u043C\u0438",
+            "url": "classes/Whatis-OzonSeller-V1-Stocks.html"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\V1\\Prices\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0435\u043D\u0438\u0435\u0020\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u0438\u0020\u043E\u0020\u0446\u0435\u043D\u0430\u0445",
-            "url": "classes/Whatis-OzonSeller-V1-Prices.html#method_get"
+            "fqsen": "\\Whatis\\OzonSeller\\V1\\Stocks\u003A\u003Aupdate\u0028\u0029",
+            "name": "update",
+            "summary": "\u041E\u0431\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u043E\u0441\u0442\u0430\u0442\u043A\u0438",
+            "url": "classes/Whatis-OzonSeller-V1-Stocks.html#method_update"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\V1\\Prices\u003A\u003Aset\u0028\u0029",
-            "name": "set",
-            "summary": "\u0417\u0430\u0433\u0440\u0443\u0437\u043A\u0430\u0020\u0446\u0435\u043D",
-            "url": "classes/Whatis-OzonSeller-V1-Prices.html#method_set"
+            "fqsen": "\\Whatis\\OzonSeller\\V1\\Stocks\u003A\u003AgetByWarehouse\u0028\u0029",
+            "name": "getByWarehouse",
+            "summary": "\u0418\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044F\u0020\u043E\u0431\u0020\u043E\u0441\u0442\u0430\u0442\u043A\u0430\u0445\u0020\u043D\u0430\u0020\u0441\u043A\u043B\u0430\u0434\u0430\u0445\u0020\u043F\u0440\u043E\u0434\u0430\u0432\u0446\u0430",
+            "url": "classes/Whatis-OzonSeller-V1-Stocks.html#method_getByWarehouse"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\V1\\Stocks\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "\u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0439\u0020\u043F\u0443\u0442\u044C\u0020\u0434\u043E\u0020\u043C\u0435\u0442\u043E\u0434\u043E\u0432",
+            "url": "classes/Whatis-OzonSeller-V1-Stocks.html#property_path"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\V1\\Warehouse",
+            "name": "Warehouse",
+            "summary": "\u041A\u043B\u0430\u0441\u0441\u002D\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u0434\u043B\u044F\u0020\u0440\u0430\u0431\u043E\u0442\u044B\n\u0441\u043E\u0020\u0441\u043A\u043B\u0430\u0434\u0430\u043C\u0438",
+            "url": "classes/Whatis-OzonSeller-V1-Warehouse.html"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\V1\\Warehouse\u003A\u003Alist\u0028\u0029",
+            "name": "list",
+            "summary": "\u0421\u043F\u0438\u0441\u043E\u043A\u0020\u0441\u043A\u043B\u0430\u0434\u043E\u0432",
+            "url": "classes/Whatis-OzonSeller-V1-Warehouse.html#method_list"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\V1\\Warehouse\u003A\u003AdeliveryMethods\u0028\u0029",
+            "name": "deliveryMethods",
+            "summary": "\u0421\u043F\u0438\u0441\u043E\u043A\u0020\u043C\u0435\u0442\u043E\u0434\u043E\u0432\u0020\u0434\u043E\u0441\u0442\u0430\u0432\u043A\u0438\u0020\u0441\u043A\u043B\u0430\u0434\u0430",
+            "url": "classes/Whatis-OzonSeller-V1-Warehouse.html#method_deliveryMethods"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\V1\\Warehouse\u003A\u003A\u0024path",
+            "name": "path",
+            "summary": "\u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0439\u0020\u043F\u0443\u0442\u044C\u0020\u0434\u043E\u0020\u043C\u0435\u0442\u043E\u0434\u043E\u0432",
+            "url": "classes/Whatis-OzonSeller-V1-Warehouse.html#property_path"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\V2\\FBS\\PostingsTrait",
             "name": "PostingsTrait",
@@ -1006,15 +1051,15 @@ Search.appendIndex(
             "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0448\u0442\u0440\u0438\u0445\u043A\u043E\u0434\u0020\u0434\u043B\u044F\u0020\u043E\u0442\u0433\u0440\u0443\u0437\u043A\u0438\n\u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u0438\u044F\u0020\u0432\u0020\u0442\u0435\u043A\u0441\u0442\u043E\u0432\u043E\u043C\u0020\u0432\u0438\u0434\u0435",
             "url": "classes/Whatis-OzonSeller-V2-FBS.html#method_getTextTransBarcode"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\V2\\FBS\u003A\u003AproductCountryList\u0028\u0029",
-            "name": "productCountryList",
+            "fqsen": "\\Whatis\\OzonSeller\\V2\\FBS\u003A\u003AcountryList\u0028\u0029",
+            "name": "countryList",
             "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0441\u043F\u0438\u0441\u043E\u043A\u0020\u0434\u043E\u0441\u0442\u0443\u043F\u043D\u044B\u0445\n\u0441\u0442\u0440\u0430\u043D\u002D\u0438\u0437\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u0435\u043B\u0435\u0439",
-            "url": "classes/Whatis-OzonSeller-V2-FBS.html#method_productCountryList"
+            "url": "classes/Whatis-OzonSeller-V2-FBS.html#method_countryList"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\V2\\FBS\u003A\u003AproductCountrySet\u0028\u0029",
-            "name": "productCountrySet",
+            "fqsen": "\\Whatis\\OzonSeller\\V2\\FBS\u003A\u003AcountrySet\u0028\u0029",
+            "name": "countrySet",
             "summary": "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C\u0020\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E\u0020\u043E\n\u0441\u0442\u0440\u0430\u043D\u0435\u002D\u0438\u0437\u0433\u043E\u0442\u043E\u0432\u0438\u0442\u0435\u043B\u0435\u0020\u0442\u043E\u0432\u0430\u0440\u0430",
-            "url": "classes/Whatis-OzonSeller-V2-FBS.html#method_productCountrySet"
+            "url": "classes/Whatis-OzonSeller-V2-FBS.html#method_countrySet"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\V2\\FBS\u003A\u003AactCreate\u0028\u0029",
             "name": "actCreate",
@@ -1116,6 +1161,16 @@ Search.appendIndex(
             "summary": "\u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0439\u0020\u043F\u0443\u0442\u044C\u0020\u0434\u043E\u0020\u043C\u0435\u0442\u043E\u0434\u043E\u0432\u0020\u0434\u043B\u044F\n\u0432\u043E\u0437\u0432\u0440\u0430\u0442\u043E\u0432\u0020\u0438\u0437\u0020rfbs",
             "url": "classes/Whatis-OzonSeller-V2-RFBS.html#property_retPath"
         },                {
+            "fqsen": "\\Whatis\\OzonSeller\\V2\\Stocks",
+            "name": "Stocks",
+            "summary": "\u041A\u043B\u0430\u0441\u0441\u002D\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u0434\u043B\u044F\u0020\u0440\u0430\u0431\u043E\u0442\u044B\n\u0441\u0020\u043E\u0441\u0442\u0430\u0442\u043A\u0430\u043C\u0438",
+            "url": "classes/Whatis-OzonSeller-V2-Stocks.html"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\V2\\Stocks\u003A\u003AupdateWarehouse\u0028\u0029",
+            "name": "updateWarehouse",
+            "summary": "\u041E\u0431\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E\u0020\u0442\u043E\u0432\u0430\u0440\u043E\u0432\u0020\u043D\u0430\u0020\u0441\u043A\u043B\u0430\u0434\u0430\u0445",
+            "url": "classes/Whatis-OzonSeller-V2-Stocks.html#method_updateWarehouse"
+        },                {
             "fqsen": "\\Whatis\\OzonSeller\\V3\\FBS",
             "name": "FBS",
             "summary": "\u041A\u043B\u0430\u0441\u0441\u002D\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u0434\u043B\u044F\u0020\u0440\u0430\u0431\u043E\u0442\u044B\n\u0441\u0020fbs",
@@ -1151,6 +1206,16 @@ Search.appendIndex(
             "summary": "\u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0439\u0020\u043F\u0443\u0442\u044C\u0020\u0434\u043E\u0020\u043C\u0435\u0442\u043E\u0434\u043E\u0432",
             "url": "classes/Whatis-OzonSeller-V3-FBS.html#property_path"
         },                {
+            "fqsen": "\\Whatis\\OzonSeller\\V3\\Stocks",
+            "name": "Stocks",
+            "summary": "\u041A\u043B\u0430\u0441\u0441\u002D\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u0434\u043B\u044F\u0020\u0440\u0430\u0431\u043E\u0442\u044B\n\u0441\u0020\u043E\u0441\u0442\u0430\u0442\u043A\u0430\u043C\u0438",
+            "url": "classes/Whatis-OzonSeller-V3-Stocks.html"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\V3\\Stocks\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E\u0020\u043F\u043E\u0020\u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u0443\u0020\u0442\u043E\u0432\u0430\u0440\u043E\u0432",
+            "url": "classes/Whatis-OzonSeller-V3-Stocks.html#method_get"
+        },                {
             "fqsen": "\\Whatis\\OzonSeller\\V4\\FBS",
             "name": "FBS",
             "summary": "\u041A\u043B\u0430\u0441\u0441\u002D\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u0434\u043B\u044F\u0020\u0440\u0430\u0431\u043E\u0442\u044B\n\u0441\u0020fbs",
@@ -1185,6 +1250,16 @@ Search.appendIndex(
             "name": "psPath",
             "summary": "\u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0439\u0020\u043F\u0443\u0442\u044C\u0020\u0434\u043E\u0020\u043C\u0435\u0442\u043E\u0434\u043E\u0432\u0020\u0434\u043B\u044F\n\u0440\u0430\u0431\u043E\u0442\u044B\u0020\u0441\u0020\u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u044F\u043C\u0438",
             "url": "classes/Whatis-OzonSeller-V4-FBS.html#property_psPath"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\V4\\Prices",
+            "name": "Prices",
+            "summary": "\u041A\u043B\u0430\u0441\u0441\u002D\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u0434\u043B\u044F\u0020\u0440\u0430\u0431\u043E\u0442\u044B\n\u0441\u0020\u0446\u0435\u043D\u0430\u043C\u0438",
+            "url": "classes/Whatis-OzonSeller-V4-Prices.html"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\V4\\Prices\u003A\u003Aget\u0028\u0029",
+            "name": "get",
+            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E\u0020\u043E\u0020\u0446\u0435\u043D\u0435\u0020\u0442\u043E\u0432\u0430\u0440\u043E\u0432",
+            "url": "classes/Whatis-OzonSeller-V4-Prices.html#method_get"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\V5\\FBS",
             "name": "FBS",

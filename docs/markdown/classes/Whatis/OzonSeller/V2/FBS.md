@@ -108,13 +108,13 @@ public getTextTransBarcode(int $transId): mixed
 
 ***
 
-### productCountryList
+### countryList
 
 Получить список доступных
 стран-изготовителей
 
 ```php
-public productCountryList(string $search = &#039;&#039;): mixed
+public countryList(string $search = &#039;&#039;): mixed
 ```
 
 `v2/posting/fbs/product/country/list`
@@ -136,13 +136,13 @@ public productCountryList(string $search = &#039;&#039;): mixed
 
 ***
 
-### productCountrySet
+### countrySet
 
 Добавить информацию о
 стране-изготовителе товара
 
 ```php
-public productCountrySet(string $postingNumber, int $productId, string $countryIso): mixed
+public countrySet(string $postingNumber, int $productId, string $countryIso): mixed
 ```
 
 `v2/posting/fbs/product/country/set`

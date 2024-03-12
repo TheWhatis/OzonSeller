@@ -138,6 +138,8 @@ This is an automatically generated documentation for **Documentation**.
 |-------|-------------|
 | [`FBS`](./classes/Whatis/OzonSeller/V1/FBS.md) | Класс-сервис для работы<br />с fbs|
 | [`Prices`](./classes/Whatis/OzonSeller/V1/Prices.md) | Класс-сервис для работы<br />с ценами|
+| [`Stocks`](./classes/Whatis/OzonSeller/V1/Stocks.md) | Класс-сервис для работы<br />с остатками|
+| [`Warehouse`](./classes/Whatis/OzonSeller/V1/Warehouse.md) | Класс-сервис для работы<br />со складами|
 
 
 
@@ -150,6 +152,7 @@ This is an automatically generated documentation for **Documentation**.
 |-------|-------------|
 | [`FBS`](./classes/Whatis/OzonSeller/V2/FBS.md) | Класс-сервис для работы<br />с fbs|
 | [`RFBS`](./classes/Whatis/OzonSeller/V2/RFBS.md) | Класс-сервис для работы<br />с rfbs|
+| [`Stocks`](./classes/Whatis/OzonSeller/V2/Stocks.md) | Класс-сервис для работы<br />с остатками|
 
 
 
@@ -174,6 +177,7 @@ This is an automatically generated documentation for **Documentation**.
 | Class | Description |
 |-------|-------------|
 | [`FBS`](./classes/Whatis/OzonSeller/V3/FBS.md) | Класс-сервис для работы<br />с fbs|
+| [`Stocks`](./classes/Whatis/OzonSeller/V3/Stocks.md) | Класс-сервис для работы<br />с остатками|
 
 
 
@@ -185,6 +189,7 @@ This is an automatically generated documentation for **Documentation**.
 | Class | Description |
 |-------|-------------|
 | [`FBS`](./classes/Whatis/OzonSeller/V4/FBS.md) | Класс-сервис для работы<br />с fbs|
+| [`Prices`](./classes/Whatis/OzonSeller/V4/Prices.md) | Класс-сервис для работы<br />с ценами|
 
 
 

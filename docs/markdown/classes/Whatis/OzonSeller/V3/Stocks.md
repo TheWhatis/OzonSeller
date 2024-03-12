@@ -1,13 +1,13 @@
 ***
 
-# Prices
+# Stocks
 
 Класс-сервис для работы
-с ценами
+с остатками
 
 PHP version 8
 
-* Full name: `\Whatis\OzonSeller\V1\Prices`
+* Full name: `\Whatis\OzonSeller\V3\Stocks`
 * Parent class: [`\Whatis\OzonSeller\Service\BaseService`](../Service/BaseService.md)
 
 **See Also:**
@@ -20,15 +20,15 @@ PHP version 8
 ## Methods
 
 
-### update
+### get
 
-Обновить цены
+Получить информацию по количеству товаров
 
 ```php
-public update(array $prices): mixed
+public get(int $limit, string $lastId = &#039;&#039;, array $filter = []): mixed
 ```
 
-`v1/product/import/price`
+`v3/product/info/stocks`
 
 
 
@@ -39,7 +39,9 @@ public update(array $prices): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$prices` | **array** | Цены |
+| `$limit` | **int** | Количество значений |
+| `$lastId` | **string** | Элемент пагинации |
+| `$filter` | **array** | Фильтры |
 
 
 

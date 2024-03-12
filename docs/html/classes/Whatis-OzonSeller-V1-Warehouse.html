@@ -93,11 +93,12 @@
                                         <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/whatis.html">Whatis</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/whatis-ozonseller.html">OzonSeller</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/whatis-ozonseller-v1.html">V1</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    ServiceCompositor
+    Warehouse
 
         <span class="phpdocumentor-element__extends">
         extends <a href="classes/Whatis-OzonSeller-Service-BaseService.html"><abbr title="\Whatis\OzonSeller\Service\BaseService">BaseService</abbr></a>
@@ -110,9 +111,6 @@
                             </ul>
         </div>
     
-            <span class="phpdocumentor-element__implements">
-            implements
-                            <abbr title="\Countable">Countable</abbr>                    </span>
     
     </h2>
 
@@ -122,14 +120,14 @@
 </div>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceCompositor.php"><a href="files/src-servicecompositor.html"><abbr title="src/ServiceCompositor.php">ServiceCompositor.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/V1/Warehouse.php"><a href="files/src-v1-warehouse.html"><abbr title="src/V1/Warehouse.php">Warehouse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">33</span>
+    <span class="phpdocumentor-element-found-in__line">32</span>
 
     </aside>
 
             <p class="phpdocumentor-summary">Класс-сервис для работы
-с ценами</p>
+со складами</p>
 
     <section class="phpdocumentor-description"><p>PHP version 8</p>
 </section>
@@ -137,7 +135,7 @@
 
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
-        <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Whatis-OzonSeller-V1-Warehouse.html#tags" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h5>
     <dl class="phpdocumentor-tag-list">
@@ -146,7 +144,7 @@
                 </dt>
                 <dd class="phpdocumentor-tag-list__definition">
                                                                                 
-                                                 <section class="phpdocumentor-description"><p>V3</p>
+                                                 <section class="phpdocumentor-description"><p>V1</p>
 </section>
 
                                     </dd>
@@ -181,19 +179,12 @@
 
 <h3 id="toc">
     Table of Contents
-    <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Whatis-OzonSeller-V1-Warehouse.html#toc" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h3>
 
 
 
-    <h4 id="toc-interfaces">
-        Interfaces
-        <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#toc-interfaces" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <dl class="phpdocumentor-table-of-contents">
-                    <dt class="phpdocumentor-table-of-contents__entry -interface"><abbr title="\Countable">Countable</abbr></dt>    </dl>
 
 
 
@@ -202,7 +193,7 @@
 
 <h4 id="toc-properties">
     Properties
-    <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Whatis-OzonSeller-V1-Warehouse.html#toc-properties" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
@@ -213,56 +204,27 @@
 </dt>
 <dd>Клиент</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#property_clientId">$clientId</a>
-    <span>
-                        &nbsp;: int            </span>
-</dt>
-<dd>Идентификатор клиента</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#property_services">$services</a>
-    <span>
-                        &nbsp;: array&lt;string, <a href="classes/Whatis-OzonSeller-Service-IService.html"><abbr title="\Whatis\OzonSeller\Service\IService">IService</abbr></a>&gt;            </span>
-</dt>
-<dd>Набор используемых сервисов</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#property_token">$token</a>
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Whatis-OzonSeller-V1-Warehouse.html#property_path">$path</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
-<dd>Токен</dd>
+<dd>Основной путь до методов</dd>
 
     </dl>
 
 <h4 id="toc-methods">
     Methods
-    <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
+    <a href="classes/Whatis-OzonSeller-V1-Warehouse.html#toc-methods" class="headerlink"><i class="fas fa-link"></i></a>
 
 </h4>
 <dl class="phpdocumentor-table-of-contents">
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method___call">__call()</a>
+    <a href="classes/Whatis-OzonSeller-Service-TService.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
-<dd>Вызов методов из используемых
-сервисов (если есть)</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method___construct">__construct()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>Создать композитор</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method_add">add()</a>
-    <span>
-                                &nbsp;: static    </span>
-</dt>
-<dd>Добавить новый сервис в композитор</dd>
+<dd>Иницилизация сервиса</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Whatis-OzonSeller-Service-TService.html#method_basePath">basePath()</a>
@@ -272,11 +234,11 @@
 <dd>Получить базовый uri</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method_count">count()</a>
+    <a href="classes/Whatis-OzonSeller-V1-Warehouse.html#method_deliveryMethods">deliveryMethods()</a>
     <span>
-                                &nbsp;: int    </span>
+                                &nbsp;: mixed    </span>
 </dt>
-<dd>Проверить количество используемых сервисов</dd>
+<dd>Список методов доставки склада</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Whatis-OzonSeller-Service-TService.html#method_domain">domain()</a>
@@ -300,18 +262,11 @@
 <dd>Получить фабрику запросов</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method_make">make()</a>
+    <a href="classes/Whatis-OzonSeller-V1-Warehouse.html#method_list">list()</a>
     <span>
-                                &nbsp;: static    </span>
+                                &nbsp;: mixed    </span>
 </dt>
-<dd>Создать композитор</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method_names">names()</a>
-    <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;    </span>
-</dt>
-<dd>Получить названия используемых сервисов</dd>
+<dd>Список складов</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Whatis-OzonSeller-Service-TService.html#method_request">request()</a>
@@ -366,7 +321,7 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Whatis-OzonSeller-V1-Warehouse.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -407,98 +362,30 @@
         class="
             phpdocumentor-element
             -property
-            -protected
-                                                -read-only        "
->
-    <h4 class="phpdocumentor-element__name" id="property_clientId">
-        $clientId
-        <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#property_clientId" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceCompositor.php"><a href="files/src-servicecompositor.html"><abbr title="src/ServiceCompositor.php">ServiceCompositor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">40</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Идентификатор клиента</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">$clientId</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
+            -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="property_services">
-        $services
-        <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#property_services" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_path">
+        $path
+        <a href="classes/Whatis-OzonSeller-V1-Warehouse.html#property_path" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceCompositor.php"><a href="files/src-servicecompositor.html"><abbr title="src/ServiceCompositor.php">ServiceCompositor.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/V1/Warehouse.php"><a href="files/src-v1-warehouse.html"><abbr title="src/V1/Warehouse.php">Warehouse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">54</span>
+    <span class="phpdocumentor-element-found-in__line">39</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Набор используемых сервисов</p>
+        <p class="phpdocumentor-summary">Основной путь до методов</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type">array&lt;string, <a href="classes/Whatis-OzonSeller-Service-IService.html"><abbr title="\Whatis\OzonSeller\Service\IService">IService</abbr></a>&gt;</span>
-    <span class="phpdocumentor-signature__name">$services</span>
-     = <span class="phpdocumentor-signature__default-value">[]</span></code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                -read-only        "
->
-    <h4 class="phpdocumentor-element__name" id="property_token">
-        $token
-        <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#property_token" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceCompositor.php"><a href="files/src-servicecompositor.html"><abbr title="src/ServiceCompositor.php">ServiceCompositor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">47</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Токен</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
+    <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">string</span>
-    <span class="phpdocumentor-signature__name">$token</span>
-    </code>
+    <span class="phpdocumentor-signature__name">$path</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;v1/warehouse&#039;</span></code>
 
     
     
@@ -510,7 +397,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/Whatis-OzonSeller-V1-Warehouse.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
 
         </h3>
                     <article
@@ -519,92 +406,23 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method___call">
-        __call()
-        <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method___call" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceCompositor.php"><a href="files/src-servicecompositor.html"><abbr title="src/ServiceCompositor.php">ServiceCompositor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">141</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Вызов методов из используемых
-сервисов (если есть)</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__call</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arguments</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$method</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Метод</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$arguments</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Аргументы</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-    <h5 class="phpdocumentor-tag-list__heading" id="tags">
-        Tags
-        <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method___call#tags" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h5>
-    <dl class="phpdocumentor-tag-list">
-                                    <dt class="phpdocumentor-tag-list__entry">
-                    <span class="phpdocumentor-tag__name">throws</span>
-                </dt>
-                <dd class="phpdocumentor-tag-list__definition">
-                                                                <span class="phpdocumentor-tag-link"><abbr title="\Whatis\OzonSeller\BadMethodCallException">BadMethodCallException</abbr></span>
-                                                            
-                                             
-                                    </dd>
-                                            </dl>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Whatis-OzonSeller-Service-TService.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceCompositor.php"><a href="files/src-servicecompositor.html"><abbr title="src/ServiceCompositor.php">ServiceCompositor.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Service/TService.php"><a href="files/src-service-tservice.html"><abbr title="src/Service/TService.php">TService.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">63</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Создать композитор</p>
+        <p class="phpdocumentor-summary">Иницилизация сервиса</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clientId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$services</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clientId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -629,77 +447,11 @@
 </section>
 
             </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$services</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Сервисы</p>
-</section>
-
-            </dd>
             </dl>
 
     
 
     
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_add">
-        add()
-        <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method_add" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceCompositor.php"><a href="files/src-servicecompositor.html"><abbr title="src/ServiceCompositor.php">ServiceCompositor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">95</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Добавить новый сервис в композитор</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">add</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Whatis-OzonSeller-Service-IService.html"><abbr title="\Whatis\OzonSeller\Service\IService">IService</abbr></a>|string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$service</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$name</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Название сервиса</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$service</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Whatis-OzonSeller-Service-IService.html"><abbr title="\Whatis\OzonSeller\Service\IService">IService</abbr></a>|string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Сервис</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">static</span>
-            </section>
-
 </article>
                     <article
         class="phpdocumentor-element
@@ -743,35 +495,63 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_count">
-        count()
-        <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method_count" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_deliveryMethods">
+        deliveryMethods()
+        <a href="classes/Whatis-OzonSeller-V1-Warehouse.html#method_deliveryMethods" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceCompositor.php"><a href="files/src-servicecompositor.html"><abbr title="src/ServiceCompositor.php">ServiceCompositor.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/V1/Warehouse.php"><a href="files/src-v1-warehouse.html"><abbr title="src/V1/Warehouse.php">Warehouse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">65</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Проверить количество используемых сервисов</p>
+        <p class="phpdocumentor-summary">Список методов доставки склада</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">count</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
+                    <span class="phpdocumentor-signature__name">deliveryMethods</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$limit</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$offset</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">0</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$filter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
-    
-    
+        <section class="phpdocumentor-description"><p><code class="prettyprint">v1/warehouse/delivery-method/list</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$limit</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Количество возвращаемых методов</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$offset</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">0</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Отступ (элемент пагинации)</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$filter</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Фильтры</p>
+</section>
+
+            </dd>
+            </dl>
+
     
 
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">int</span>
-            </section>
-
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -885,103 +665,35 @@
         class="phpdocumentor-element
             -method
             -public
-                                    -static                    "
->
-    <h4 class="phpdocumentor-element__name" id="method_make">
-        make()
-        <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method_make" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceCompositor.php"><a href="files/src-servicecompositor.html"><abbr title="src/ServiceCompositor.php">ServiceCompositor.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">82</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Создать композитор</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">make</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clientId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$services</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$clientId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Идентификатор клиента</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$token</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Токен ozon seller api</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$services</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Сервисы</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">static</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_names">
-        names()
-        <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method_names" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_list">
+        list()
+        <a href="classes/Whatis-OzonSeller-V1-Warehouse.html#method_list" class="headerlink"><i class="fas fa-link"></i></a>
 
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceCompositor.php"><a href="files/src-servicecompositor.html"><abbr title="src/ServiceCompositor.php">ServiceCompositor.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="src/V1/Warehouse.php"><a href="files/src-v1-warehouse.html"><abbr title="src/V1/Warehouse.php">Warehouse.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">126</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Получить названия используемых сервисов</p>
+        <p class="phpdocumentor-summary">Список складов</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">names</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                    <span class="phpdocumentor-signature__name">list</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
-    
+        <section class="phpdocumentor-description"><p><code class="prettyprint">v1/warehouse/list</code></p>
+</section>
+
     
     
 
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
-            </section>
-
+    
 </article>
                     <article
         class="phpdocumentor-element
@@ -1287,7 +999,7 @@
     <div class="phpdocumentor-modal-bg" data-exit-button></div>
     <div class="phpdocumentor-modal-container">
         <div class="phpdocumentor-modal-content">
-            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/ServiceCompositor.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
+            <pre style="max-height: 500px; overflow-y: scroll" data-src="files/src/V1/Warehouse.php.txt" class="language-php line-numbers linkable-line-numbers"></pre>
         </div>
         <button data-exit-button class="phpdocumentor-modal__close">&times;</button>
     </div>
@@ -1386,34 +1098,29 @@
             <li class="phpdocumentor-on-this-page-section__title">Table Of Contents</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                                            <li><a href="classes/Whatis-OzonSeller-ServiceCompositor.html#toc-properties">Properties</a></li>
-                                                            <li><a href="classes/Whatis-OzonSeller-ServiceCompositor.html#toc-methods">Methods</a></li>
+                                                            <li><a href="classes/Whatis-OzonSeller-V1-Warehouse.html#toc-properties">Properties</a></li>
+                                                            <li><a href="classes/Whatis-OzonSeller-V1-Warehouse.html#toc-methods">Methods</a></li>
                                     </ul>
             </li>
             
                             <li class="phpdocumentor-on-this-page-section__title">Properties</li>
                 <li>
                     <ul class="phpdocumentor-list -clean">
-                                                    <li><a href="classes/Whatis-OzonSeller-Service-TService.html#property_client">$client<a href="classes/Whatis-OzonSeller-ServiceCompositor.html"></li>
-                                                    <li><a href="classes/Whatis-OzonSeller-ServiceCompositor.html#property_clientId">$clientId<a href="classes/Whatis-OzonSeller-ServiceCompositor.html"></li>
-                                                    <li><a href="classes/Whatis-OzonSeller-ServiceCompositor.html#property_services">$services<a href="classes/Whatis-OzonSeller-ServiceCompositor.html"></li>
-                                                    <li><a href="classes/Whatis-OzonSeller-ServiceCompositor.html#property_token">$token<a href="classes/Whatis-OzonSeller-ServiceCompositor.html"></li>
+                                                    <li><a href="classes/Whatis-OzonSeller-Service-TService.html#property_client">$client<a href="classes/Whatis-OzonSeller-V1-Warehouse.html"></li>
+                                                    <li><a href="classes/Whatis-OzonSeller-V1-Warehouse.html#property_path">$path<a href="classes/Whatis-OzonSeller-V1-Warehouse.html"></li>
                                             </ul>
                 </li>
             
                         <li class="phpdocumentor-on-this-page-section__title">Methods</li>
             <li>
                 <ul class="phpdocumentor-list -clean">
-                                            <li><a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method___call">__call()</a></li>
-                                            <li><a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method___construct">__construct()</a></li>
-                                            <li><a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method_add">add()</a></li>
+                                            <li><a href="classes/Whatis-OzonSeller-Service-TService.html#method___construct">__construct()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Service-TService.html#method_basePath">basePath()</a></li>
-                                            <li><a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method_count">count()</a></li>
+                                            <li><a href="classes/Whatis-OzonSeller-V1-Warehouse.html#method_deliveryMethods">deliveryMethods()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Service-TService.html#method_domain">domain()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Service-TService.html#method_getFormatter">getFormatter()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Service-TService.html#method_getRequestFactory">getRequestFactory()</a></li>
-                                            <li><a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method_make">make()</a></li>
-                                            <li><a href="classes/Whatis-OzonSeller-ServiceCompositor.html#method_names">names()</a></li>
+                                            <li><a href="classes/Whatis-OzonSeller-V1-Warehouse.html#method_list">list()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Service-TService.html#method_request">request()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Service-TService.html#method_withFormatter">withFormatter()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Service-TService.html#method_withRequestFactory">withRequestFactory()</a></li>
@@ -1439,7 +1146,7 @@
     </section>
 </section>
         </div>
-        <a href="classes/Whatis-OzonSeller-ServiceCompositor.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/Whatis-OzonSeller-V1-Warehouse.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 

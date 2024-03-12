@@ -1,13 +1,13 @@
 ***
 
-# Prices
+# Stocks
 
 Класс-сервис для работы
-с ценами
+с остатками
 
 PHP version 8
 
-* Full name: `\Whatis\OzonSeller\V1\Prices`
+* Full name: `\Whatis\OzonSeller\V1\Stocks`
 * Parent class: [`\Whatis\OzonSeller\Service\BaseService`](../Service/BaseService.md)
 
 **See Also:**
@@ -16,19 +16,36 @@ PHP version 8
 
 
 
+## Properties
+
+
+### path
+
+Основной путь до методов
+
+```php
+public string $path
+```
+
+
+
+
+
+
+***
 
 ## Methods
 
 
 ### update
 
-Обновить цены
+Обновить остатки
 
 ```php
-public update(array $prices): mixed
+public update(array $stocks): mixed
 ```
 
-`v1/product/import/price`
+`v1/product/import/stocks`
 
 
 
@@ -39,7 +56,34 @@ public update(array $prices): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$prices` | **array** | Цены |
+| `$stocks` | **array** | Остатки товаров |
+
+
+
+
+
+***
+
+### getByWarehouse
+
+Информация об остатках на складах продавца
+
+```php
+public getByWarehouse(array $skus): mixed
+```
+
+`v1/product/info/stocks-by-warehouse/fbs`
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$skus` | **array** | SKU товаров |
 
 
 

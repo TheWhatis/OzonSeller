@@ -36,6 +36,21 @@ public static array $mapping
 
 ***
 
+### clientId
+
+Идентификатор клиента
+
+```php
+protected int $clientId
+```
+
+
+
+
+
+
+***
+
 ### token
 
 Используемый токен
@@ -81,6 +96,23 @@ protected array&lt;string,string&gt; $aliases
 
 ***
 
+### compositors
+
+Используемые компановщики по
+названиям (алиасам)
+
+```php
+protected array&lt;string,\Whatis\OzonSeller\ServiceCompositor&gt; $compositors
+```
+
+Используется если алиас привязан
+ко многим сервисам
+
+
+
+
+***
+
 ## Methods
 
 
@@ -89,7 +121,7 @@ protected array&lt;string,string&gt; $aliases
 Иницилизировать фасад
 
 ```php
-public __construct(string $token): mixed
+public __construct(int $clientId, string $token): mixed
 ```
 
 
@@ -103,6 +135,7 @@ public __construct(string $token): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
+| `$clientId` | **int** | Идентификатор клиента |
 | `$token` | **string** | Токен |
 
 
@@ -174,7 +207,7 @@ public static get(string $name): string
 по его названию
 
 ```php
-public static getService(string $name, string $token): \Whatis\OzonSeller\Service\IService
+public static getService(string $name, int $clientId, string $token): \Whatis\OzonSeller\Service\IService
 ```
 
 
@@ -189,6 +222,7 @@ public static getService(string $name, string $token): \Whatis\OzonSeller\Servic
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$name` | **string** | Название |
+| `$clientId` | **int** | Идентификатор клиента |
 | `$token` | **string** | Токен |
 
 
@@ -241,7 +275,7 @@ public static set(string $name, string $service): void
 Создать текущий объект
 
 ```php
-public static make(string $token): static
+public static make(int $clientId, string $token): static
 ```
 
 
@@ -255,6 +289,7 @@ public static make(string $token): static
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
+| `$clientId` | **int** | Идентификатор клиента |
 | `$token` | **string** | Токен |
 
 
@@ -379,37 +414,6 @@ public hasService(string $name): bool
 |-----------|------|-------------|
 | `$name` | **string** | Название |
 
-
-
-
-
-***
-
-### composite
-
-Скомпоновать несколько сервисов
-
-```php
-public composite(array&lt;string,\Whatis\OzonSeller\Service\IService&gt; $services): \Whatis\OzonSeller\ServiceCompositor
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$services` | **array<string,\Whatis\OzonSeller\Service\IService>** | Сервисы |
-
-
-**Return Value:**
-
-description
 
 
 

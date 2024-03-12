@@ -302,6 +302,22 @@
 <dd>Получить причины отмены отправлений</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Whatis-OzonSeller-V2-FBS.html#method_countryList">countryList()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>Получить список доступных
+стран-изготовителей</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Whatis-OzonSeller-V2-FBS.html#method_countrySet">countrySet()</a>
+    <span>
+                                &nbsp;: mixed    </span>
+</dt>
+<dd>Добавить информацию о
+стране-изготовителе товара</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Whatis-OzonSeller-Service-TService.html#method_domain">domain()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -408,22 +424,6 @@
                                 &nbsp;: mixed    </span>
 </dt>
 <dd>Изменить статус на &quot;отправлено продавцом&quot;</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-V2-FBS.html#method_productCountryList">productCountryList()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>Получить список доступных
-стран-изготовителей</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-V2-FBS.html#method_productCountrySet">productCountrySet()</a>
-    <span>
-                                &nbsp;: mixed    </span>
-</dt>
-<dd>Добавить информацию о
-стране-изготовителе товара</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Whatis-OzonSeller-Service-TService.html#method_request">request()</a>
@@ -1142,6 +1142,118 @@
         class="phpdocumentor-element
             -method
             -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_countryList">
+        countryList()
+        <a href="classes/Whatis-OzonSeller-V2-FBS.html#method_countryList" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/V2/FBS.php"><a href="files/src-v2-fbs.html"><abbr title="src/V2/FBS.php">FBS.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">96</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Получить список доступных
+стран-изготовителей</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">countryList</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$search</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+        <section class="phpdocumentor-description"><p><code class="prettyprint">v2/posting/fbs/product/country/list</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$search</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Фильтрация по строке</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_countrySet">
+        countrySet()
+        <a href="classes/Whatis-OzonSeller-V2-FBS.html#method_countrySet" class="headerlink"><i class="fas fa-link"></i></a>
+
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/V2/FBS.php"><a href="files/src-v2-fbs.html"><abbr title="src/V2/FBS.php">FBS.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">116</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Добавить информацию о
+стране-изготовителе товара</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                    <span class="phpdocumentor-signature__name">countrySet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$postingNumber</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$productId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$countryIso</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+    <div class="phpdocumentor-label-line">
+        </div>
+        <section class="phpdocumentor-description"><p><code class="prettyprint">v2/posting/fbs/product/country/set</code></p>
+</section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$postingNumber</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Номер отправления</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$productId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Идентификатор товара</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$countryIso</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Двухбуквенный код страны в формате ISO-3166-1</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_domain">
@@ -1807,118 +1919,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_productCountryList">
-        productCountryList()
-        <a href="classes/Whatis-OzonSeller-V2-FBS.html#method_productCountryList" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/V2/FBS.php"><a href="files/src-v2-fbs.html"><abbr title="src/V2/FBS.php">FBS.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">96</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Получить список доступных
-стран-изготовителей</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">productCountryList</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$search</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-        <section class="phpdocumentor-description"><p><code class="prettyprint">v2/posting/fbs/product/country/list</code></p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$search</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Фильтрация по строке</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_productCountrySet">
-        productCountrySet()
-        <a href="classes/Whatis-OzonSeller-V2-FBS.html#method_productCountrySet" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/V2/FBS.php"><a href="files/src-v2-fbs.html"><abbr title="src/V2/FBS.php">FBS.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">116</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Добавить информацию о
-стране-изготовителе товара</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">productCountrySet</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$postingNumber</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$productId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$countryIso</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-        <section class="phpdocumentor-description"><p><code class="prettyprint">v2/posting/fbs/product/country/set</code></p>
-</section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$postingNumber</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Номер отправления</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$productId</span>
-                : <span class="phpdocumentor-signature__argument__return-type">int</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Идентификатор товара</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$countryIso</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Двухбуквенный код страны в формате ISO-3166-1</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_request">
         request()
         <a href="classes/Whatis-OzonSeller-Service-TService.html#method_request" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2554,6 +2554,8 @@
                                             <li><a href="classes/Whatis-OzonSeller-V2-FBS-PostingsTrait.html#method_cancelPosting">cancelPosting()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-V2-FBS-PostingsTrait.html#method_cancelPostingProducts">cancelPostingProducts()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-V2-FBS-PostingsTrait.html#method_cancelReasonList">cancelReasonList()</a></li>
+                                            <li><a href="classes/Whatis-OzonSeller-V2-FBS.html#method_countryList">countryList()</a></li>
+                                            <li><a href="classes/Whatis-OzonSeller-V2-FBS.html#method_countrySet">countrySet()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Service-TService.html#method_domain">domain()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-V2-FBS-PostingsTrait.html#method_getByBarcode">getByBarcode()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Service-TService.html#method_getFormatter">getFormatter()</a></li>
@@ -2569,8 +2571,6 @@
                                             <li><a href="classes/Whatis-OzonSeller-V2-FBS-PostingsTrait.html#method_postingsDelivering">postingsDelivering()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-V2-FBS-PostingsTrait.html#method_postingsLastMile">postingsLastMile()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-V2-FBS-PostingsTrait.html#method_postingsSentBySeller">postingsSentBySeller()</a></li>
-                                            <li><a href="classes/Whatis-OzonSeller-V2-FBS.html#method_productCountryList">productCountryList()</a></li>
-                                            <li><a href="classes/Whatis-OzonSeller-V2-FBS.html#method_productCountrySet">productCountrySet()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Service-TService.html#method_request">request()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-V2-FBS-PostingsTrait.html#method_setPostingTrackNumber">setPostingTrackNumber()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-V2-FBS.html#method_shipmentActList">shipmentActList()</a></li>

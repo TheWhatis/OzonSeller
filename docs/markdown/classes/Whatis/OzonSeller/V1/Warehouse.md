@@ -1,13 +1,13 @@
 ***
 
-# Prices
+# Warehouse
 
 Класс-сервис для работы
-с ценами
+со складами
 
 PHP version 8
 
-* Full name: `\Whatis\OzonSeller\V1\Prices`
+* Full name: `\Whatis\OzonSeller\V1\Warehouse`
 * Parent class: [`\Whatis\OzonSeller\Service\BaseService`](../Service/BaseService.md)
 
 **See Also:**
@@ -16,19 +16,57 @@ PHP version 8
 
 
 
+## Properties
+
+
+### path
+
+Основной путь до методов
+
+```php
+public string $path
+```
+
+
+
+
+
+
+***
 
 ## Methods
 
 
-### update
+### list
 
-Обновить цены
+Список складов
 
 ```php
-public update(array $prices): mixed
+public list(): mixed
 ```
 
-`v1/product/import/price`
+`v1/warehouse/list`
+
+
+
+
+
+
+
+
+
+
+***
+
+### deliveryMethods
+
+Список методов доставки склада
+
+```php
+public deliveryMethods(int $limit, int $offset, array $filter = []): mixed
+```
+
+`v1/warehouse/delivery-method/list`
 
 
 
@@ -39,7 +77,9 @@ public update(array $prices): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$prices` | **array** | Цены |
+| `$limit` | **int** | Количество возвращаемых методов |
+| `$offset` | **int** | Отступ (элемент пагинации) |
+| `$filter` | **array** | Фильтры |
 
 
 

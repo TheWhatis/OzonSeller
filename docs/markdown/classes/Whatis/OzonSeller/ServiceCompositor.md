@@ -8,7 +8,9 @@
 PHP version 8
 
 * Full name: `\Whatis\OzonSeller\ServiceCompositor`
-* Parent class: [`BaseService`](./BaseService.md)
+* Parent class: [`\Whatis\OzonSeller\Service\BaseService`](./Service/BaseService.md)
+* This class implements:
+[`\Countable`](../../Countable.md)
 
 **See Also:**
 
@@ -18,6 +20,36 @@ PHP version 8
 
 ## Properties
 
+
+### clientId
+
+Идентификатор клиента
+
+```php
+protected int $clientId
+```
+
+
+
+
+
+
+***
+
+### token
+
+Токен
+
+```php
+protected string $token
+```
+
+
+
+
+
+
+***
 
 ### services
 
@@ -42,7 +74,7 @@ protected array&lt;string,\Whatis\OzonSeller\Service\IService&gt; $services
 Создать композитор
 
 ```php
-public __construct(array&lt;string,\Whatis\OzonSeller\Service\IService&gt; $services): mixed
+public __construct(int $clientId, string $token, array $services = []): mixed
 ```
 
 
@@ -56,7 +88,9 @@ public __construct(array&lt;string,\Whatis\OzonSeller\Service\IService&gt; $serv
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$services` | **array<string,\Whatis\OzonSeller\Service\IService>** | Сервисы |
+| `$clientId` | **int** | Идентификатор клиента |
+| `$token` | **string** | Токен ozon seller api |
+| `$services` | **array** | Сервисы |
 
 
 
@@ -69,34 +103,7 @@ public __construct(array&lt;string,\Whatis\OzonSeller\Service\IService&gt; $serv
 Создать композитор
 
 ```php
-public make(array $services): static
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$services` | **array** | Сервисы |
-
-
-
-
-
-***
-
-### single
-
-Создать композитор с одним сервисом
-
-```php
-public static single(string $name, \Whatis\OzonSeller\Service\IService $service): static
+public static make(int $clientId, string $token, array $services = []): static
 ```
 
 
@@ -110,8 +117,9 @@ public static single(string $name, \Whatis\OzonSeller\Service\IService $service)
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$name` | **string** | Название сервиса |
-| `$service` | **\Whatis\OzonSeller\Service\IService** | Сервис |
+| `$clientId` | **int** | Идентификатор клиента |
+| `$token` | **string** | Токен ozon seller api |
+| `$services` | **array** | Сервисы |
 
 
 
@@ -124,7 +132,7 @@ public static single(string $name, \Whatis\OzonSeller\Service\IService $service)
 Добавить новый сервис в композитор
 
 ```php
-public add(string $name, \Whatis\OzonSeller\Service\IService $service): static
+public add(string $name, \Whatis\OzonSeller\Service\IService|string $service): static
 ```
 
 
@@ -139,7 +147,49 @@ public add(string $name, \Whatis\OzonSeller\Service\IService $service): static
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$name` | **string** | Название сервиса |
-| `$service` | **\Whatis\OzonSeller\Service\IService** | Сервис |
+| `$service` | **\Whatis\OzonSeller\Service\IService&#124;string** | Сервис |
+
+
+
+
+
+***
+
+### count
+
+Проверить количество используемых сервисов
+
+```php
+public count(): int
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### names
+
+Получить названия используемых сервисов
+
+```php
+public names(): array
+```
+
+
+
+
+
+
+
 
 
 
@@ -153,7 +203,7 @@ public add(string $name, \Whatis\OzonSeller\Service\IService $service): static
 сервисов (если есть)
 
 ```php
-public __call(string $method, mixed $arguments): mixed
+public __call(string $method, array $arguments): mixed
 ```
 
 
@@ -168,7 +218,7 @@ public __call(string $method, mixed $arguments): mixed
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `$method` | **string** | Метод |
-| `$arguments` | **mixed** |  |
+| `$arguments` | **array** | Аргументы |
 
 
 
@@ -176,6 +226,286 @@ public __call(string $method, mixed $arguments): mixed
 **Throws:**
 
 - [`BadMethodCallException`](./BadMethodCallException.md)
+
+
+
+***
+
+
+## Inherited methods
+
+
+### __construct
+
+Иницилизация сервиса
+
+```php
+public __construct(int $clientId, string $token): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$clientId` | **int** | Идентификатор клиента |
+| `$token` | **string** | Токен ozon seller api |
+
+
+
+
+
+***
+
+### domain
+
+Получить домен для обращения
+
+```php
+public static domain(): string
+```
+
+
+
+* This method is **static**.
+
+
+
+
+
+
+
+
+***
+
+### basePath
+
+Получить базовый uri
+
+```php
+public static basePath(): string
+```
+
+
+
+* This method is **static**.
+
+
+
+
+
+
+
+
+***
+
+### withFormatter
+
+Установить форматировщик
+
+```php
+public withFormatter(\Whatis\OzonSeller\Formatters\IJsonFormatter $formatter): static
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$formatter` | **\Whatis\OzonSeller\Formatters\IJsonFormatter** | Форматировщик |
+
+
+
+
+
+***
+
+### getFormatter
+
+Получить форматировщик
+
+```php
+public getFormatter(): \Whatis\OzonSeller\Formatters\IJsonFormatter
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### withRequestFactory
+
+Установить фабрику запросов
+
+```php
+public withRequestFactory(\Psr\Http\Message\RequestFactoryInterface $factory): static
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$factory` | **\Psr\Http\Message\RequestFactoryInterface** | Фабрика запросов |
+
+
+
+
+
+***
+
+### getRequestFactory
+
+Получить фабрику запросов
+
+```php
+public getRequestFactory(): \Psr\Http\Message\RequestFactoryInterface
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### headers
+
+Получить заголовки из Payload
+
+```php
+protected headers(mixed $payload): array
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$payload` | **mixed** | Полезная нагрузка |
+
+
+
+
+
+***
+
+### params
+
+Получить параметры из Payload
+
+```php
+protected params(mixed $payload): array
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$payload` | **mixed** | Полезная нагрузка |
+
+
+
+
+
+***
+
+### body
+
+Получить тело запроса из Payload
+
+```php
+protected body(mixed $payload): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$payload` | **mixed** | Полезная нагрузка |
+
+
+
+
+
+***
+
+### request
+
+Воспроизвести запрос
+
+```php
+public request(string|\Whatis\OzonSeller\Enums\HttpMethod $method, string $path, mixed $payload = null): mixed
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$method` | **string&#124;\Whatis\OzonSeller\Enums\HttpMethod** | Метод |
+| `$path` | **string** | Путь до запроса |
+| `$payload` | **mixed** | Полезная нагрузка запроса |
+
+
 
 
 

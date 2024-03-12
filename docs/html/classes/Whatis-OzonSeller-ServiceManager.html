@@ -211,6 +211,21 @@
 <dd>Алиасы сервисов</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Whatis-OzonSeller-ServiceManager.html#property_clientId">$clientId</a>
+    <span>
+                        &nbsp;: int            </span>
+</dt>
+<dd>Идентификатор клиента</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Whatis-OzonSeller-ServiceManager.html#property_compositors">$compositors</a>
+    <span>
+                        &nbsp;: array&lt;string, <a href="classes/Whatis-OzonSeller-ServiceCompositor.html"><abbr title="\Whatis\OzonSeller\ServiceCompositor">ServiceCompositor</abbr></a>&gt;            </span>
+</dt>
+<dd>Используемые компановщики по
+названиям (алиасам)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Whatis-OzonSeller-ServiceManager.html#property_services">$services</a>
     <span>
                         &nbsp;: array&lt;int, <a href="classes/Whatis-OzonSeller-Service-IService.html"><abbr title="\Whatis\OzonSeller\Service\IService">IService</abbr></a>&gt;            </span>
@@ -252,13 +267,6 @@
                                 &nbsp;: static    </span>
 </dt>
 <dd>Установить alias на сервис</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-ServiceManager.html#method_composite">composite()</a>
-    <span>
-                                &nbsp;: <a href="classes/Whatis-OzonSeller-ServiceCompositor.html"><abbr title="\Whatis\OzonSeller\ServiceCompositor">ServiceCompositor</abbr></a>    </span>
-</dt>
-<dd>Скомпоновать несколько сервисов</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Whatis-OzonSeller-ServiceManager.html#method_get">get()</a>
@@ -406,7 +414,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">74</span>
+    <span class="phpdocumentor-element-found-in__line">81</span>
 
     </aside>
 
@@ -428,6 +436,78 @@
             phpdocumentor-element
             -property
             -protected
+                                                -read-only        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_clientId">
+        $clientId
+        <a href="classes/Whatis-OzonSeller-ServiceManager.html#property_clientId" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">60</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Идентификатор клиента</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$clientId</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_compositors">
+        $compositors
+        <a href="classes/Whatis-OzonSeller-ServiceManager.html#property_compositors" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">92</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Используемые компановщики по
+названиям (алиасам)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">array&lt;string, <a href="classes/Whatis-OzonSeller-ServiceCompositor.html"><abbr title="\Whatis\OzonSeller\ServiceCompositor">ServiceCompositor</abbr></a>&gt;</span>
+    <span class="phpdocumentor-signature__name">$compositors</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"><p>Используется если алиас привязан
+ко многим сервисам</p>
+</section>
+
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
                                                         "
 >
     <h4 class="phpdocumentor-element__name" id="property_services">
@@ -440,7 +520,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">67</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
@@ -462,19 +542,19 @@
             phpdocumentor-element
             -property
             -protected
-                                                        "
+                                                -read-only        "
 >
     <h4 class="phpdocumentor-element__name" id="property_token">
         $token
         <a href="classes/Whatis-OzonSeller-ServiceManager.html#property_token" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
-                                </span>
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">67</span>
 
     </aside>
 
@@ -513,7 +593,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">359</span>
+    <span class="phpdocumentor-element-found-in__line">388</span>
 
     </aside>
 
@@ -566,7 +646,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">100</span>
 
     </aside>
 
@@ -574,13 +654,22 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clientId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$clientId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Идентификатор клиента</p>
+</section>
+
+            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$token</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
@@ -610,7 +699,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">221</span>
+    <span class="phpdocumentor-element-found-in__line">244</span>
 
     </aside>
 
@@ -680,58 +769,6 @@
         class="phpdocumentor-element
             -method
             -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_composite">
-        composite()
-        <a href="classes/Whatis-OzonSeller-ServiceManager.html#method_composite" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">284</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Скомпоновать несколько сервисов</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">composite</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string, <a href="classes/Whatis-OzonSeller-Service-IService.html"><abbr title="\Whatis\OzonSeller\Service\IService">IService</abbr></a>&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$services</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Whatis-OzonSeller-ServiceCompositor.html"><abbr title="\Whatis\OzonSeller\ServiceCompositor">ServiceCompositor</abbr></a></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$services</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string, <a href="classes/Whatis-OzonSeller-Service-IService.html"><abbr title="\Whatis\OzonSeller\Service\IService">IService</abbr></a>&gt;</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Сервисы</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><a href="classes/Whatis-OzonSeller-ServiceCompositor.html"><abbr title="\Whatis\OzonSeller\ServiceCompositor">ServiceCompositor</abbr></a></span>
-                    &mdash;
-                <section class="phpdocumentor-description"><p>description</p>
-</section>
-
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
                                     -static                    "
 >
     <h4 class="phpdocumentor-element__name" id="method_get">
@@ -742,7 +779,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">125</span>
+    <span class="phpdocumentor-element-found-in__line">145</span>
 
     </aside>
 
@@ -809,7 +846,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">143</span>
+    <span class="phpdocumentor-element-found-in__line">164</span>
 
     </aside>
 
@@ -818,7 +855,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Whatis-OzonSeller-Service-IService.html"><abbr title="\Whatis\OzonSeller\Service\IService">IService</abbr></a></span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">getService</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$name</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clientId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><a href="classes/Whatis-OzonSeller-Service-IService.html"><abbr title="\Whatis\OzonSeller\Service\IService">IService</abbr></a></span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -831,6 +868,15 @@
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"><p>Название</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$clientId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Идентификатор клиента</p>
 </section>
 
             </dd>
@@ -871,7 +917,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">271</span>
+    <span class="phpdocumentor-element-found-in__line">293</span>
 
     </aside>
 
@@ -919,7 +965,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">253</span>
+    <span class="phpdocumentor-element-found-in__line">275</span>
 
     </aside>
 
@@ -976,7 +1022,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">189</span>
+    <span class="phpdocumentor-element-found-in__line">212</span>
 
     </aside>
 
@@ -984,13 +1030,22 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">make</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
+            <span class="phpdocumentor-signature__static">static</span>        <span class="phpdocumentor-signature__name">make</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clientId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$clientId</span>
+                : <span class="phpdocumentor-signature__argument__return-type">int</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Идентификатор клиента</p>
+</section>
+
+            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$token</span>
                 : <span class="phpdocumentor-signature__argument__return-type">string</span>
@@ -1024,7 +1079,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">111</span>
 
     </aside>
 
@@ -1060,7 +1115,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">160</span>
+    <span class="phpdocumentor-element-found-in__line">182</span>
 
     </aside>
 
@@ -1136,7 +1191,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">298</span>
+    <span class="phpdocumentor-element-found-in__line">308</span>
 
     </aside>
 
@@ -1204,7 +1259,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">326</span>
+    <span class="phpdocumentor-element-found-in__line">355</span>
 
     </aside>
 
@@ -1252,7 +1307,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">342</span>
+    <span class="phpdocumentor-element-found-in__line">371</span>
 
     </aside>
 
@@ -1300,7 +1355,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/ServiceManager.php"><a href="files/src-servicemanager.html"><abbr title="src/ServiceManager.php">ServiceManager.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">202</span>
+    <span class="phpdocumentor-element-found-in__line">225</span>
 
     </aside>
 
@@ -1460,6 +1515,8 @@
                     <ul class="phpdocumentor-list -clean">
                                                     <li><a href="classes/Whatis-OzonSeller-ServiceManager.html#property_mapping">$mapping<a href="classes/Whatis-OzonSeller-ServiceManager.html"></li>
                                                     <li><a href="classes/Whatis-OzonSeller-ServiceManager.html#property_aliases">$aliases<a href="classes/Whatis-OzonSeller-ServiceManager.html"></li>
+                                                    <li><a href="classes/Whatis-OzonSeller-ServiceManager.html#property_clientId">$clientId<a href="classes/Whatis-OzonSeller-ServiceManager.html"></li>
+                                                    <li><a href="classes/Whatis-OzonSeller-ServiceManager.html#property_compositors">$compositors<a href="classes/Whatis-OzonSeller-ServiceManager.html"></li>
                                                     <li><a href="classes/Whatis-OzonSeller-ServiceManager.html#property_services">$services<a href="classes/Whatis-OzonSeller-ServiceManager.html"></li>
                                                     <li><a href="classes/Whatis-OzonSeller-ServiceManager.html#property_token">$token<a href="classes/Whatis-OzonSeller-ServiceManager.html"></li>
                                             </ul>
@@ -1471,7 +1528,6 @@
                                             <li><a href="classes/Whatis-OzonSeller-ServiceManager.html#method___call">__call()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-ServiceManager.html#method___construct">__construct()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-ServiceManager.html#method_alias">alias()</a></li>
-                                            <li><a href="classes/Whatis-OzonSeller-ServiceManager.html#method_composite">composite()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-ServiceManager.html#method_get">get()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-ServiceManager.html#method_getService">getService()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-ServiceManager.html#method_hasService">hasService()</a></li>
