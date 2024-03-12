@@ -1,7 +1,7 @@
 # Библиотека для Ozon Seller Api
 ## Документация
   * [Documentation](https://github.com/TheWhatis/OzonSeller/tree/master/docs/markdown/Home.md "Documentation")
-## Установка
+## Установка (пока не работает)
 ```
 composer require whatis/ozon-seller
 ```
@@ -42,7 +42,7 @@ $manager->withRequestFactory(new HttpFactory);
 
 // Получение сборочных заданий
 $reasons = $manager->use('fbs')->cancelReasonList(limit: 1);
-$reasons = $manager->fgsCancelReasonList(limit: 1);
+$reasons = $manager->fbsCancelReasonList(limit: 1);
 $reasons = $manager->cancelReasonListFbs(limit: 1);
 var_dump($reasons);
 
