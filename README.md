@@ -1,7 +1,7 @@
 # Библиотека для Ozon Seller Api
 ## Документация
   * [Documentation](https://github.com/TheWhatis/OzonSeller/tree/master/docs/markdown/Home.md "Documentation")
-## Установка (пока не работает)
+## Установка
 ```
 composer require whatis/ozon-seller
 ```
