@@ -53,11 +53,18 @@ class ServiceManager
     public static array $mapping = [];
 
     /**
+     * Идентификатор клиента
+     *
+     * @var int
+     */
+    protected readonly int $clientId;
+
+    /**
      * Используемый токен
      *
      * @var string
      */
-    protected string $token;
+    protected readonly string $token;
 
     /**
      * Используемые сервисы
@@ -74,12 +81,25 @@ class ServiceManager
     protected array $aliases = [];
 
     /**
+     * Используемые компановщики по
+     * названиям (алиасам)
+     *
+     * Используется если алиас привязан
+     * ко многим сервисам
+     *
+     * @var array<string, ServiceCompositor>
+     */
+    protected array $compositors = [];
+
+    /**
      * Иницилизировать фасад
      *
-     * @param string $token Токен
+     * @param int    $clientId Идентификатор клиента
+     * @param string $token    Токен
      */
-    public function __construct(string $token)
+    public function __construct(int $clientId, string $token)
     {
+        $this->clientId = $clientId;
         $this->token = $token;
     }
 
@@ -135,16 +155,18 @@ class ServiceManager
      * Получить иницилизированный сервис
      * по его названию
      *
-     * @param string $name  Название
-     * @param string $token Токен
+     * @param string $name     Название
+     * @param int    $clientId Идентификатор клиента
+     * @param string $token    Токен
      *
      * @return IService Сервис
      */
     public static function getService(
         string $name,
-        string $token,
+        int $clientId,
+        string $token
     ): IService {
-        return new (static::get($name))($token);
+        return new (static::get($name))($clientId, $token);
     }
 
     /**
@@ -182,13 +204,14 @@ class ServiceManager
     /**
      * Создать текущий объект
      *
-     * @param string $token Токен
+     * @param int    $clientId Идентификатор клиента
+     * @param string $token    Токен
      *
      * @return static
      */
-    public static function make(string $token): static
+    public static function make(int $clientId, string $token): static
     {
-        return new static($token);
+        return new static($clientId, $token);
     }
 
     /**
@@ -220,9 +243,6 @@ class ServiceManager
      */
     public function alias(string $name, ?string $alias): static
     {
-        array_key_exists($name, $this->services)
-            or throw new ServiceNotFound($name, $this->services);
-
         if ($alias) {
             if (array_key_exists($alias, $this->aliases)) {
                 if (is_array($this->aliases[$alias])) {
@@ -231,15 +251,17 @@ class ServiceManager
                     }
 
                     $this->aliases[$alias][] = $name;
+
                 }
 
                 $this->aliases[$alias] = [$this->aliases[$alias], $name];
+                goto returns;
             }
 
             $this->aliases[$alias] = $name;
         }
 
-        return $this;
+        returns: return $this;
     }
 
     /**
@@ -255,7 +277,7 @@ class ServiceManager
         $this->checkServiceExists($name);
         $this->alias($name, $alias);
         $this->services[$name] = static::getService(
-            $name, $this->token
+            $name, $this->clientId, $this->token
         );
 
         return $this;
@@ -272,18 +294,6 @@ class ServiceManager
     {
         return array_key_exists($name, $this->services)
             || array_key_exists($name, $this->aliases);
-    }
-
-    /**
-     * Скомпоновать несколько сервисов
-     *
-     * @param array<string, IService> $services Сервисы
-     *
-     * @return ServiceCompositor description
-     */
-    public function composite(array $services)
-    {
-        return new ServiceCompositor($services);
     }
 
     /**
@@ -305,15 +315,34 @@ class ServiceManager
             return $this->services[$name];
         }
 
+        $alias = $name;
         $names = $name = $this->aliases[$name];
-        return is_string($names)
-            ? $this->services[$name] : array_reduce(
-                $names, function ($carry, $name) {
-                    return $carry
-                        ? $carry->add($name, $this->services[$name])
-                        : ServiceCompositor::single($name, $this->services[$name]);
-                }
-            );
+
+        if (is_string($names)) {
+            return $this->services[$name];
+        }
+
+        if (array_key_exists($alias, $this->compositors)) {
+            $compositor = $this->compositors[$alias];
+            if (count($names) === $compositor->count()) {
+                return $compositor;
+            }
+
+            foreach (array_diff($names, $compositor->names()) as $name) {
+                $compositor->add($name, $this->services[$name]);
+            }
+
+            return $compositor;
+        }
+
+        return $this->compositors[$alias] = array_reduce(
+            $names, function ($carry, $name) {
+                return $carry
+                    ? $carry->add($name, $this->services[$name])
+                    : ServiceCompositor::make($this->clientId, $this->token)
+                    ->add($name, $this->services[$name]);
+            }
+        );
     }
 
     /**

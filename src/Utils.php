@@ -132,8 +132,12 @@ class Utils
             $class = $method->getDeclaringClass()->newInstanceWithoutConstructor();
             preg_match('/:(?<name>\w+)/', $map->path, $matches);
             foreach ($matches as $match) {
+                if (substr($match, 0, 1) === ':') {
+                    continue;
+                }
+
                 $map->path = str_replace(
-                    $match, $class->{substr($match, 1)}, $map->path
+                    ":$match", $class->$match, $map->path
                 );
             }
 

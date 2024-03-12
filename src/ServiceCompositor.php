@@ -15,6 +15,8 @@
 namespace Whatis\OzonSeller;
 
 use Whatis\OzonSeller\Service\IService;
+use Whatis\OzonSeller\Service\BaseService;
+use Countable;
 
 /**
  * Класс-сервис для работы
@@ -28,8 +30,22 @@ use Whatis\OzonSeller\Service\IService;
  * @license  unlicense
  * @link     https://github.com/TheWhatis/wb-api-skeleton
  */
-class ServiceCompositor extends BaseService
+class ServiceCompositor extends BaseService implements Countable
 {
+    /**
+     * Идентификатор клиента
+     *
+     * @var int
+     */
+    protected readonly int $clientId;
+
+    /**
+     * Токен
+     *
+     * @var string
+     */
+    protected readonly string $token;
+
     /**
      * Набор используемых сервисов
      *
@@ -40,10 +56,15 @@ class ServiceCompositor extends BaseService
     /**
      * Создать композитор
      *
-     * @param array<string, IService> $services Сервисы
+     * @param int    $clientId Идентификатор клиента
+     * @param string $token    Токен ozon seller api
+     * @param array  $services Сервисы
      */
-    public function __construct(array $services)
+    public function __construct(int $clientId, string $token, array $services = [])
     {
+        parent::__construct($clientId, $token);
+        $this->clientId = $clientId;
+        $this->token = $token;
         foreach ($services as $name => $service) {
             $this->add($name, $service);
         }
@@ -52,40 +73,59 @@ class ServiceCompositor extends BaseService
     /**
      * Создать композитор
      *
-     * @param array $services Сервисы
+     * @param int    $clientId Идентификатор клиента
+     * @param string $token    Токен ozon seller api
+     * @param array  $services Сервисы
      *
      * @return static
      */
-    public function make(array $services): static
+    public static function make(int $clientId, string $token, array $services = [])
     {
-        return new static($services);
-    }
-
-    /**
-     * Создать композитор с одним сервисом
-     *
-     * @param string   $name    Название сервиса
-     * @param IService $service Сервис
-     *
-     * @return static
-     */
-    public static function single(string $name, IService $service)
-    {
-        return new static([$name => $service]);
+        return new static($clientId, $token, $services);
     }
 
     /**
      * Добавить новый сервис в композитор
      *
-     * @param string   $name    Название сервиса
-     * @param IService $service Сервис
+     * @param string          $name    Название сервиса
+     * @param IService|string $service Сервис
      *
      * @return static
      */
-    public function add(string $name, IService $service): static
+    public function add(string $name, IService|string $service): static
     {
+        if (is_string($service)) {
+            if (!is_a($service, IService::class, true)) {
+                throw new InvalidArgumentException(sprintf(
+                    'Argument service must be implements [%s]', IService::class
+                ));
+            }
+
+            $service = new $service($this->clientId, $this->token);
+        }
+
         $this->services[$name] = $service;
         return $this;
+    }
+
+    /**
+     * Проверить количество используемых сервисов
+     *
+     * @return int
+     */
+    public function count(): int
+    {
+        return count($this->services);
+    }
+
+    /**
+     * Получить названия используемых сервисов
+     *
+     * @return array
+     */
+    public function names(): array
+    {
+        return array_keys($this->services);
     }
 
     /**
@@ -93,7 +133,7 @@ class ServiceCompositor extends BaseService
      * сервисов (если есть)
      *
      * @param string $method    Метод
-     * @param array  $argumetns Аргументы
+     * @param array  $arguments Аргументы
      *
      * @return mixed
      * @throw  BadMethodCallException
