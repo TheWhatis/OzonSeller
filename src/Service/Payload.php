@@ -2,7 +2,7 @@
 /**
  * Файл с классом полезной нагрузки
  * для создания запросов из
- * сервиса `IService`
+ * сервиса `BaseService`
  *
  * PHP version 8
  *
@@ -18,7 +18,7 @@ namespace Whatis\OzonSeller\Service;
 /**
  * Класс полезной нагрузки
  * для создания запросов из
- * сервиса `IService`
+ * сервиса `BaseService`
  *
  * PHP version 8
  *
