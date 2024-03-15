@@ -24,8 +24,7 @@
     "autoload": {
         "psr-4": {
             "Whatis\\OzonSeller\\": "src/"
-        },
-        "files": ["src/register/registerServices.php"]
+        }
     },
     "authors": [
         {
