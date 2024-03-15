@@ -1,7 +1,7 @@
 <?php
 /**
  * Файл с интерфейсом клиента
- * для wildberries api
+ * для ozon seller api
  *
  * PHP version 8
  *
@@ -35,33 +35,17 @@ interface IClient
     /**
      * Иницилизация клиента
      *
-     * @param int    $clientId Идентификатор клиента
-     * @param string $token    Токен ozon seller api
+     * @param int                      $clientId  Идентификатор клиента
+     * @param string                   $token     Токен ozon seller api
+     * @param ?IJsomFormatter          $formatter Форматировщик данных
+     * @param ?RequestFactoryInterface $factory   Фабрика запросов
      */
-    public function __construct(int $clientId, string $token);
-
-    /**
-     * Получить идентификатор клиента
-     *
-     * @return int
-     */
-    public function getClientId(): int;
-
-    /**
-     * Получить токен
-     *
-     * @return string
-     */
-    public function getToken(): string;
-
-    /**
-     * Установить форматтер body
-     *
-     * @param IJsonFormatter $formatter Форматер
-     *
-     * @return static
-     */
-    public function withFormatter(IJsonFormatter $formatter): static;
+    public function __construct(
+        int $clientId,
+        string $token,
+        ?IJsonFormatter $formatter = null,
+        ?RequestFactoryInterface $factory = null
+    );
 
     /**
      * Получить форматер
@@ -69,24 +53,6 @@ interface IClient
      * @return IJsonFormatter
      */
     public function getFormatter(): IJsonFormatter;
-
-    /**
-     * Установить фабрику запросов
-     *
-     * @param RequestFactoryInterface $factory Фабрика запросов
-     *
-     * @return static
-     */
-    public function withRequestFactory(
-        RequestFactoryInterface $factory
-    ): static;
-
-    /**
-     * Получить фабрику запросов
-     *
-     * @return RequestFactoryInterface
-     */
-    public function getRequestFactory(): RequestFactoryInterface;
 
     /**
      * Выполнить запрос к wb api

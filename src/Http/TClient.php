@@ -41,7 +41,7 @@ trait TClient
      *
      * @var int
      */
-    public readonly int $clinetId;
+    public readonly int $clientId;
 
     /**
      * Токен
@@ -63,27 +63,34 @@ trait TClient
      *
      * @var IJsonFormatter
      */
-    protected IJsonFormatter $formatter;
+    public readonly IJsonFormatter $formatter;
 
     /**
      * Фабрика запросов
      *
      * @var RequestFactoryInterface
      */
-    protected RequestFactoryInterface $requestFactory;
+    public readonly RequestFactoryInterface $requestFactory;
 
     /**
      * Иницилизация клиента
      *
-     * @param int    $clientId Идентификатор клиента
-     * @param string $token    Токен ozon seller api
+     * @param int                      $clientId  Идентификатор клиента
+     * @param string                   $token     Токен ozon seller api
+     * @param ?IJsomFormatter          $formatter Форматировщик данных
+     * @param ?RequestFactoryInterface $factory   Фабрика запросов
      */
-    public function __construct(int $clientId, string $token)
-    {
+    public function __construct(
+        int $clientId,
+        string $token,
+        ?IJsonFormatter $formatter = null,
+        ?RequestFactoryInterface $factory = null
+    ) {
         $this->clientId = $clientId;
         $this->token = $token;
-        $this->formatter = new StdClassFormatter;
-        $this->requestFactory = new HttpFactory;
+
+        $this->formatter = $formatter ?? new StdClassFormatter;
+        $this->requestFactory = $factory ?? new HttpFactory;
         $this->client = new GuzzleClient;
     }
 
@@ -108,19 +115,6 @@ trait TClient
     }
 
     /**
-     * Установить форматтер body
-     *
-     * @param IJsonFormatter $formatter Форматер
-     *
-     * @return static
-     */
-    public function withFormatter(IJsonFormatter $formatter): static
-    {
-        $this->formatter = $formatter;
-        return $this;
-    }
-
-    /**
      * Получить форматер
      *
      * @return IJsonFormatter
@@ -128,29 +122,6 @@ trait TClient
     public function getFormatter(): IJsonFormatter
     {
         return $this->formatter;
-    }
-
-    /**
-     * Установить фабрику запросов
-     *
-     * @param RequestFactoryInterface $factory Фабрика запросов
-     *
-     * @return static
-     */
-    public function withRequestFactory(RequestFactoryInterface $factory): static
-    {
-        $this->requestFactory = $factory;
-        return $this;
-    }
-
-    /**
-     * Получить фабрику запросов
-     *
-     * @return RequestFactoryInterface
-     */
-    public function getRequestFactory(): RequestFactoryInterface
-    {
-        return $this->requestFactory;
     }
 
     /**
@@ -201,7 +172,7 @@ trait TClient
      */
     public function request(Payload $payload): ResponseInterface
     {
-        $request = $this->getRequestFactory()->createRequest(
+        $request = $this->requestFactory->createRequest(
             $payload->method->value, $this->uri($payload)
         );
 
