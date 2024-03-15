@@ -20,9 +20,6 @@ use Attribute;
  * Атрибут для установки пути
  * до api ресурса
  *
- * Нужен для метода
- * ServiceManager::mapping
- *
  * PHP version 8
  *
  * @category Attribute
