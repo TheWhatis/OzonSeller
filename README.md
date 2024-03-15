@@ -5,52 +5,70 @@
 ```
 composer require whatis/ozon-seller
 ```
+
 ## Использование
+### Стандартное использование
 ```php
 /// ... Подключение пакета (require_once 'vendor/autoload.php')
 
-// Менеджер для взаимодествия с "сервисами" -
-// классами, реализующими методы для
-// взаимодействия с api
-use Whatis\OzonSeller\ServiceManager;
-
-// Форматировщик тела ответа
-use Whatis\OzonSeller\Formatters\ArrayFormatter;
-
-// Фабрика запросов (RequestFactoryInterface)
-use GuzzleHttp\Psr7\HttpFactory;
+use Whatis\OzonSeller\Client\Client;
+use Whatis\OzonSeller\V2\FBS;
 
 $clientId = 123321
-$token 'some-ozon-token-alla';
-$manager = ServiceManager::make($clientId, $token)->initNew(
-    'v2/fbs', // Ключ сервиса в ServiceManager::$mapping
-    'fbs'     // Алиас для последующего взаимодейстия
-);
+$token 'some-ozon-token-alla'
 
-// Иницилизируем ещё несколько
-$manager->initNew('v3/fbs', 'fbs')
-        ->initNew('v2/rfbs');
+$fbs = new FBS(new Client($clientId, $token));
 
-// Создание алиаса отдельно
-$manager->alias('v2/rfbs', 'rfbs')
+var_dump($fbs->countryList());
+// ...
+```
+### С использованием ServiceManager
+```php
+/// ... Подключение пакета (require_once 'vendor/autoload.php')
 
-// Можно установить свой форматировщик
-$manager->withFormatter(new ArrayFormatter);
+use Whatis\OzonSeller\Client\Client;
+use Whatis\OzonSeller\ServiceManager;
+use Whatis\OzonSeller\Package\DefaultPackage;
 
-// Можно установить свою фабрику запросов
-$manager->withRequestFactory(new HttpFactory);
+$clientId = 123321
+$token 'some-ozon-token-alla'
 
-// Получение сборочных заданий
-$reasons = $manager->use('fbs')->cancelReasonList(limit: 1);
-$reasons = $manager->fbsCancelReasonList(limit: 1);
-$reasons = $manager->cancelReasonListFbs(limit: 1);
-var_dump($reasons);
+// С использованием клиента
+$manager = new ServiceManager(new Client($clientId, $token));
 
-// Получение тегов
-$return = $manager->use('rfbs')->getReturn(123);
-$return = $manager->rfbsGetReturn(123);
-$return = $manager->getReturnRfbs(123);
-var_dump($return);
+// Без использования клиента
+$manager = ServiceManager::byCreds($clientId, $token);
+
+// Для работы с сервисами по-умолчанию, необходимо
+// расширить менеджер пакетом DefaultPackage
+$manager->package(new DefaultPackage);
+
+// Вы можете расширять менеджер своими сервисами,
+// например, создать псевдоним для существующего
+$manager->extend('fbs', fn ($manager) => $manager->service('v2/fbs'));
+
+// Или скомпановать несколько сервисов
+// под одним названием
+$manager->extend('composed', fn ($manager) => new ServiceCompositor([
+    $manager->creator('v2/fbs'),
+    $manager->creator('v3/fbs')
+]));
+
+// Стандартное использование
+var_dump($manager->use('fbs')->countryList());
+var_dump($manager->use('v2/fbs')->countryList());
+var_dump($manager->use('composed')->countryList());
+
+// С автоматическим поиском сервиса и метода.
+// Это работает так: делится название метода по
+// Camel|Case, если находит название сервиса
+// по одному из разделенных слов, то удаляет
+// его из названия метода и вызывает его
+// из сервиса: fbsCountryList->|fbs|countryList,
+// countryListFbs->countryList|Fbs|
+
+var_dump($manager->fbsCountryList());
+var_dump($manager->countryListFbs());
 // ...
 ```
 
@@ -118,38 +136,4 @@ class Service extends BaseService
 
     // ...
 }
-```
-### Регистрация сервиса в ServiceManager
-```php
-/// ... Подключение пакета (require_once 'vendor/autoload.php')
-
-use Whatis\OzonSeller\ServiceManager;
-use Whatis\OzonSeller\Example\Service;
-
-ServiceManager::set('example', Service::class);
-
-// ...
-```
-### Использование сервиса
-```php
-<?php
-/// ... Подключение пакета (require_once 'vendor/autoload.php')
-
-use Whatis\OzonSeller\Example\Service;
-use Whatis\OzonSeller\ServiceManager;
-
-$clientId = 123321
-$token = 'some-ozon-token-alla';
-
-// Обычное использование
-$service = new Service($clientId, $token);
-var_dump($service->get());
-
-// С помощью ServiceManager
-$manager = ServiceManager::make($clientId, $token)->initNew('example');
-
-$result = $manager->use('example')->get();
-$result = $manager->exampleGet();
-$result = $manager->getExample();
-var_dump($result);
 ```
