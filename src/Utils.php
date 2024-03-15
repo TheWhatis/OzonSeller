@@ -123,7 +123,7 @@ class Utils
     public static function serviceMethodPath(ReflectionMethod $method): string
     {
         $map = array_reduce(
-            $method->getAttributes(Mapping::class),function ($carry, $map) {
+            $method->getAttributes(Mapping::class), function ($carry, $map) {
                 return $carry ? $carry : $map->newInstance();
             }
         );
