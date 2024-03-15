@@ -1,6 +1,6 @@
 {
     "name": "whatis/ozon-seller",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "description": "Библиотека для взаимодействия с wildberries api",
     "type": "library",
     "keywords": [
