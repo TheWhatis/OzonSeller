@@ -82,8 +82,8 @@ namespace Whatis\OzonSeller\Example;
 
 use Whatis\OzonSeller\Service\BaseService;
 
-// Атрибут, необходимый для
-// метода ServiceManager::mapping
+// Атрибут, необходимый для создания
+// карты api методов->методов класса
 use Whatis\OzonSeller\Attribute\Mapping;
 
 use DateTime;
