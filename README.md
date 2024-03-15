@@ -28,6 +28,7 @@ var_dump($fbs->countryList());
 
 use Whatis\OzonSeller\Client\Client;
 use Whatis\OzonSeller\ServiceManager;
+use Whatis\OzonSeller\ServiceCompositor;
 use Whatis\OzonSeller\Package\DefaultPackage;
 
 $clientId = 123321
