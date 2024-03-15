@@ -16,7 +16,7 @@ namespace Whatis\OzonSeller\Http;
 
 /**
  * Абстрактный класс клиента
- * для wildberries api
+ * для api
  *
  * PHP version 8
  *
