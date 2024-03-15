@@ -3,7 +3,7 @@
 # Client
 
 Основной класс клиента
-wildberries api
+ozon seller api
 
 PHP version 8
 
@@ -27,7 +27,7 @@ PHP version 8
 Иницилизация клиента
 
 ```php
-public __construct(int $clientId, string $token): mixed
+public __construct(int $clientId, string $token, ?\Whatis\OzonSeller\Http\IJsomFormatter $formatter = null, ?\Psr\Http\Message\RequestFactoryInterface $factory = null): mixed
 ```
 
 
@@ -43,6 +43,8 @@ public __construct(int $clientId, string $token): mixed
 |-----------|------|-------------|
 | `$clientId` | **int** | Идентификатор клиента |
 | `$token` | **string** | Токен ozon seller api |
+| `$formatter` | **?\Whatis\OzonSeller\Http\IJsomFormatter** | Форматировщик данных |
+| `$factory` | **?\Psr\Http\Message\RequestFactoryInterface** | Фабрика запросов |
 
 
 
@@ -92,87 +94,12 @@ public getToken(): string
 
 ***
 
-### withFormatter
-
-Установить форматтер body
-
-```php
-public withFormatter(\Whatis\OzonSeller\Formatters\IJsonFormatter $formatter): static
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$formatter` | **\Whatis\OzonSeller\Formatters\IJsonFormatter** | Форматер |
-
-
-
-
-
-***
-
 ### getFormatter
 
 Получить форматер
 
 ```php
 public getFormatter(): \Whatis\OzonSeller\Formatters\IJsonFormatter
-```
-
-
-
-
-
-
-
-
-
-
-
-
-***
-
-### withRequestFactory
-
-Установить фабрику запросов
-
-```php
-public withRequestFactory(\Psr\Http\Message\RequestFactoryInterface $factory): static
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$factory` | **\Psr\Http\Message\RequestFactoryInterface** | Фабрика запросов |
-
-
-
-
-
-***
-
-### getRequestFactory
-
-Получить фабрику запросов
-
-```php
-public getRequestFactory(): \Psr\Http\Message\RequestFactoryInterface
 ```
 
 
@@ -271,4 +198,4 @@ public request(\Whatis\OzonSeller\Http\Payload $payload): \Psr\Http\Message\Resp
 
 
 ***
-> Automatically generated on 2024-03-12
+> Automatically generated on 2024-03-15

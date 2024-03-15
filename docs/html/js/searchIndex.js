@@ -51,130 +51,15 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/Whatis-OzonSeller-Enums-HttpMethod.html#enumcase_PATCH"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Enums\\Permission",
-            "name": "Permission",
-            "summary": "\u041F\u0435\u0440\u0435\u0447\u0438\u0441\u043B\u0435\u043D\u0438\u0435\u0020\u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u0439\u0020\u0434\u043B\u044F\u0020\u0442\u043E\u043A\u0435\u043D\u0430",
-            "url": "classes/Whatis-OzonSeller-Enums-Permission.html"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Enums\\Permission\u003A\u003AasString\u0028\u0029",
-            "name": "asString",
-            "summary": "\u041F\u0440\u0435\u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u0442\u044C\u0020\u0432\u0020\u0441\u0442\u0440\u043E\u043A\u0443",
-            "url": "classes/Whatis-OzonSeller-Enums-Permission.html#method_asString"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Enums\\Permission\u003A\u003ASandbox",
-            "name": "Sandbox",
-            "summary": "",
-            "url": "classes/Whatis-OzonSeller-Enums-Permission.html#enumcase_Sandbox"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Enums\\Permission\u003A\u003AContent",
-            "name": "Content",
-            "summary": "",
-            "url": "classes/Whatis-OzonSeller-Enums-Permission.html#enumcase_Content"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Enums\\Permission\u003A\u003AAnalytics",
-            "name": "Analytics",
-            "summary": "",
-            "url": "classes/Whatis-OzonSeller-Enums-Permission.html#enumcase_Analytics"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Enums\\Permission\u003A\u003AMarketplace",
-            "name": "Marketplace",
-            "summary": "",
-            "url": "classes/Whatis-OzonSeller-Enums-Permission.html#enumcase_Marketplace"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Enums\\Permission\u003A\u003AStatistics",
-            "name": "Statistics",
-            "summary": "",
-            "url": "classes/Whatis-OzonSeller-Enums-Permission.html#enumcase_Statistics"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Enums\\Permission\u003A\u003APromotion",
-            "name": "Promotion",
-            "summary": "",
-            "url": "classes/Whatis-OzonSeller-Enums-Permission.html#enumcase_Promotion"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Enums\\Permission\u003A\u003ARecommendations",
-            "name": "Recommendations",
-            "summary": "",
-            "url": "classes/Whatis-OzonSeller-Enums-Permission.html#enumcase_Recommendations"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Enums\\Permission\u003A\u003AReadOnly",
-            "name": "ReadOnly",
-            "summary": "",
-            "url": "classes/Whatis-OzonSeller-Enums-Permission.html#enumcase_ReadOnly"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Enums\\Permission\u003A\u003APricesDiscounts",
-            "name": "PricesDiscounts",
-            "summary": "",
-            "url": "classes/Whatis-OzonSeller-Enums-Permission.html#enumcase_PricesDiscounts"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Enums\\Permission\u003A\u003AQuestionsFeedback",
-            "name": "QuestionsFeedback",
-            "summary": "",
-            "url": "classes/Whatis-OzonSeller-Enums-Permission.html#enumcase_QuestionsFeedback"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Exceptions\\PermissionsDoesNotExistsException",
-            "name": "PermissionsDoesNotExistsException",
-            "summary": "\u0418\u0441\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435,\u0020\u0432\u043E\u0437\u043D\u0438\u043A\u0430\u044E\u0449\u0435\u0435\n\u043A\u043E\u0433\u0434\u0430\u0020\u0443\u0020\u0442\u043E\u043A\u0435\u043D\u0430\u0020\u043D\u0435\u0434\u043E\u0441\u0442\u0430\u0442\u043E\u0447\u043D\u043E\n\u043F\u0440\u0430\u0432\u0020\u0434\u043B\u044F\u0020\u0440\u0430\u0431\u043E\u0442\u044B\u0020\u0441\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u043C",
-            "url": "classes/Whatis-OzonSeller-Exceptions-PermissionsDoesNotExistsException.html"
-        },                {
             "fqsen": "\\Whatis\\OzonSeller\\Exceptions\\ServiceAlreadyExists",
             "name": "ServiceAlreadyExists",
             "summary": "\u0418\u0441\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435,\u0020\u0432\u043E\u0437\u043D\u0438\u043A\u0430\u044E\u0449\u0435\u0435\u0020\u043A\u043E\u0433\u0434\u0430\n\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u0443\u0436\u0435\u0020\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442",
             "url": "classes/Whatis-OzonSeller-Exceptions-ServiceAlreadyExists.html"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Exceptions\\ServiceAlreadyExists\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "\u0418\u043D\u0438\u0446\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F\u0020\u0438\u0441\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F",
-            "url": "classes/Whatis-OzonSeller-Exceptions-ServiceAlreadyExists.html#method___construct"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Exceptions\\ServiceAlreadyExists\u003A\u003AgetName\u0028\u0029",
-            "name": "getName",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435",
-            "url": "classes/Whatis-OzonSeller-Exceptions-ServiceAlreadyExists.html#method_getName"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Exceptions\\ServiceAlreadyExists\u003A\u003AgetMapping\u0028\u0029",
-            "name": "getMapping",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u043A\u0430\u0440\u0442\u0443",
-            "url": "classes/Whatis-OzonSeller-Exceptions-ServiceAlreadyExists.html#method_getMapping"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Exceptions\\ServiceAlreadyExists\u003A\u003A\u0024name",
-            "name": "name",
-            "summary": "\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435",
-            "url": "classes/Whatis-OzonSeller-Exceptions-ServiceAlreadyExists.html#property_name"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Exceptions\\ServiceAlreadyExists\u003A\u003A\u0024mapping",
-            "name": "mapping",
-            "summary": "\u041A\u0430\u0440\u0442\u0430",
-            "url": "classes/Whatis-OzonSeller-Exceptions-ServiceAlreadyExists.html#property_mapping"
-        },                {
             "fqsen": "\\Whatis\\OzonSeller\\Exceptions\\ServiceNotFound",
             "name": "ServiceNotFound",
-            "summary": "\u0418\u0441\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435,\u0020\u0432\u043E\u0437\u043D\u0438\u043A\u0430\u044E\u0449\u0435\u0435\n\u043A\u043E\u0433\u0434\u0430\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u043D\u0435\u0020\u043D\u0430\u0439\u0434\u0435\u043D\u0020\u0432\n\u043C\u0435\u043D\u0435\u0434\u0436\u0435\u0440\u0435",
+            "summary": "\u0418\u0441\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435,\u0020\u0432\u043E\u0437\u043D\u0438\u043A\u0430\u044E\u0449\u0435\u0435\u0020\u043A\u043E\u0433\u0434\u0430\n\u0441\u0435\u0440\u0432\u0438\u0441\u0430\u0020\u043D\u0435\u0020\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442",
             "url": "classes/Whatis-OzonSeller-Exceptions-ServiceNotFound.html"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Exceptions\\ServiceNotFound\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "\u0418\u043D\u0438\u0446\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F\u0020\u0438\u0441\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u044F",
-            "url": "classes/Whatis-OzonSeller-Exceptions-ServiceNotFound.html#method___construct"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Exceptions\\ServiceNotFound\u003A\u003AgetName\u0028\u0029",
-            "name": "getName",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435",
-            "url": "classes/Whatis-OzonSeller-Exceptions-ServiceNotFound.html#method_getName"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Exceptions\\ServiceNotFound\u003A\u003AgetMapping\u0028\u0029",
-            "name": "getMapping",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u043A\u0430\u0440\u0442\u0443",
-            "url": "classes/Whatis-OzonSeller-Exceptions-ServiceNotFound.html#method_getMapping"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Exceptions\\ServiceNotFound\u003A\u003A\u0024name",
-            "name": "name",
-            "summary": "\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435",
-            "url": "classes/Whatis-OzonSeller-Exceptions-ServiceNotFound.html#property_name"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Exceptions\\ServiceNotFound\u003A\u003A\u0024mapping",
-            "name": "mapping",
-            "summary": "\u041A\u0430\u0440\u0442\u0430",
-            "url": "classes/Whatis-OzonSeller-Exceptions-ServiceNotFound.html#property_mapping"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\Formatters\\ArrayFormatter",
             "name": "ArrayFormatter",
@@ -278,12 +163,12 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\Http\\BaseClient",
             "name": "BaseClient",
-            "summary": "\u0410\u0431\u0441\u0442\u0440\u0430\u043A\u0442\u043D\u044B\u0439\u0020\u043A\u043B\u0430\u0441\u0441\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430\n\u0434\u043B\u044F\u0020wildberries\u0020api",
+            "summary": "\u0410\u0431\u0441\u0442\u0440\u0430\u043A\u0442\u043D\u044B\u0439\u0020\u043A\u043B\u0430\u0441\u0441\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430\n\u0434\u043B\u044F\u0020api",
             "url": "classes/Whatis-OzonSeller-Http-BaseClient.html"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\Http\\Client",
             "name": "Client",
-            "summary": "\u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0439\u0020\u043A\u043B\u0430\u0441\u0441\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430\nwildberries\u0020api",
+            "summary": "\u041E\u0441\u043D\u043E\u0432\u043D\u043E\u0439\u0020\u043A\u043B\u0430\u0441\u0441\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430\nozon\u0020seller\u0020api",
             "url": "classes/Whatis-OzonSeller-Http-Client.html"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\Http\\IClient",
@@ -296,39 +181,14 @@ Search.appendIndex(
             "summary": "\u0418\u043D\u0438\u0446\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430",
             "url": "classes/Whatis-OzonSeller-Http-IClient.html#method___construct"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Http\\IClient\u003A\u003AgetClientId\u0028\u0029",
-            "name": "getClientId",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0438\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430",
-            "url": "classes/Whatis-OzonSeller-Http-IClient.html#method_getClientId"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Http\\IClient\u003A\u003AgetToken\u0028\u0029",
-            "name": "getToken",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0442\u043E\u043A\u0435\u043D",
-            "url": "classes/Whatis-OzonSeller-Http-IClient.html#method_getToken"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Http\\IClient\u003A\u003AwithFormatter\u0028\u0029",
-            "name": "withFormatter",
-            "summary": "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u0444\u043E\u0440\u043C\u0430\u0442\u0442\u0435\u0440\u0020body",
-            "url": "classes/Whatis-OzonSeller-Http-IClient.html#method_withFormatter"
-        },                {
             "fqsen": "\\Whatis\\OzonSeller\\Http\\IClient\u003A\u003AgetFormatter\u0028\u0029",
             "name": "getFormatter",
             "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0444\u043E\u0440\u043C\u0430\u0442\u0435\u0440",
             "url": "classes/Whatis-OzonSeller-Http-IClient.html#method_getFormatter"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Http\\IClient\u003A\u003AwithRequestFactory\u0028\u0029",
-            "name": "withRequestFactory",
-            "summary": "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u0444\u0430\u0431\u0440\u0438\u043A\u0443\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u043E\u0432",
-            "url": "classes/Whatis-OzonSeller-Http-IClient.html#method_withRequestFactory"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Http\\IClient\u003A\u003AgetRequestFactory\u0028\u0029",
-            "name": "getRequestFactory",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0444\u0430\u0431\u0440\u0438\u043A\u0443\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u043E\u0432",
-            "url": "classes/Whatis-OzonSeller-Http-IClient.html#method_getRequestFactory"
-        },                {
             "fqsen": "\\Whatis\\OzonSeller\\Http\\IClient\u003A\u003Arequest\u0028\u0029",
             "name": "request",
-            "summary": "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u0020\u043A\u0020wb\u0020api",
+            "summary": "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u0020\u043A\u0020ozon\u0020seller\u0020api",
             "url": "classes/Whatis-OzonSeller-Http-IClient.html#method_request"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\Http\\Payload",
@@ -391,25 +251,10 @@ Search.appendIndex(
             "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0442\u043E\u043A\u0435\u043D",
             "url": "classes/Whatis-OzonSeller-Http-TClient.html#method_getToken"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Http\\TClient\u003A\u003AwithFormatter\u0028\u0029",
-            "name": "withFormatter",
-            "summary": "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u0444\u043E\u0440\u043C\u0430\u0442\u0442\u0435\u0440\u0020body",
-            "url": "classes/Whatis-OzonSeller-Http-TClient.html#method_withFormatter"
-        },                {
             "fqsen": "\\Whatis\\OzonSeller\\Http\\TClient\u003A\u003AgetFormatter\u0028\u0029",
             "name": "getFormatter",
             "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0444\u043E\u0440\u043C\u0430\u0442\u0435\u0440",
             "url": "classes/Whatis-OzonSeller-Http-TClient.html#method_getFormatter"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Http\\TClient\u003A\u003AwithRequestFactory\u0028\u0029",
-            "name": "withRequestFactory",
-            "summary": "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u0444\u0430\u0431\u0440\u0438\u043A\u0443\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u043E\u0432",
-            "url": "classes/Whatis-OzonSeller-Http-TClient.html#method_withRequestFactory"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Http\\TClient\u003A\u003AgetRequestFactory\u0028\u0029",
-            "name": "getRequestFactory",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0444\u0430\u0431\u0440\u0438\u043A\u0443\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u043E\u0432",
-            "url": "classes/Whatis-OzonSeller-Http-TClient.html#method_getRequestFactory"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\Http\\TClient\u003A\u003Auri\u0028\u0029",
             "name": "uri",
@@ -426,10 +271,10 @@ Search.appendIndex(
             "summary": "\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u0442\u044C\u0020\u0437\u0430\u043F\u0440\u043E\u0441",
             "url": "classes/Whatis-OzonSeller-Http-TClient.html#method_request"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Http\\TClient\u003A\u003A\u0024clinetId",
-            "name": "clinetId",
+            "fqsen": "\\Whatis\\OzonSeller\\Http\\TClient\u003A\u003A\u0024clientId",
+            "name": "clientId",
             "summary": "\u0418\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430",
-            "url": "classes/Whatis-OzonSeller-Http-TClient.html#property_clinetId"
+            "url": "classes/Whatis-OzonSeller-Http-TClient.html#property_clientId"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\Http\\TClient\u003A\u003A\u0024token",
             "name": "token",
@@ -451,79 +296,89 @@ Search.appendIndex(
             "summary": "\u0424\u0430\u0431\u0440\u0438\u043A\u0430\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u043E\u0432",
             "url": "classes/Whatis-OzonSeller-Http-TClient.html#property_requestFactory"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Permissions",
-            "name": "Permissions",
-            "summary": "\u0418\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0430",
-            "url": "classes/Whatis-OzonSeller-Permissions.html"
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\BasePackage",
+            "name": "BasePackage",
+            "summary": "\u0424\u0430\u0439\u043B\u0020\u0441\u0020\u0430\u0431\u0441\u0442\u0440\u0430\u043A\u0442\u043D\u044B\u043C\u0020\u043A\u043B\u0430\u0441\u0441\u043E\u043C\u0020\u0434\u043B\u044F\n\u043F\u0430\u043A\u0435\u0442\u0430\u0020\u0028\u0441\u0020\u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0435\u0439\u0020\u043E\u0441\u043D\u043E\u0432\u043D\u044B\u0445\n\u043C\u0435\u0442\u043E\u0434\u043E\u0432\u0029",
+            "url": "classes/Whatis-OzonSeller-Package-BasePackage.html"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Permissions\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\BasePackage\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "\u0418\u043D\u0438\u0446\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F\u0020\u043A\u043B\u0430\u0441\u0441\u0430\u0020\u0434\u043B\u044F\n\u0440\u0430\u0431\u043E\u0442\u044B\u0020\u0441\u0020\u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u044F\u043C\u0438\n\u0442\u043E\u043A\u0435\u043D\u0430",
-            "url": "classes/Whatis-OzonSeller-Permissions.html#method___construct"
+            "summary": "\u0418\u043D\u0438\u0446\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F\u0020\u043F\u0430\u043A\u0435\u0442\u0430",
+            "url": "classes/Whatis-OzonSeller-Package-BasePackage.html#method___construct"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Permissions\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0432\u0441\u0435\u0020\u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u044F",
-            "url": "classes/Whatis-OzonSeller-Permissions.html#method_get"
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\BasePackage\u003A\u003A\u0024packages",
+            "name": "packages",
+            "summary": "\u0420\u0430\u0441\u0448\u0438\u0440\u0435\u043D\u0438\u044F",
+            "url": "classes/Whatis-OzonSeller-Package-BasePackage.html#property_packages"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Permissions\u003A\u003Ahas\u0028\u0029",
-            "name": "has",
-            "summary": "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C\u0020\u0447\u0442\u043E\u0020\u043E\u0434\u043D\u043E\u0020\u0438\u0437\u0020\u043F\u0435\u0440\u0435\u0434\u0430\u043D\u043D\u044B\u0445\n\u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u043D\u0438\u0439\u0020\u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u043E",
-            "url": "classes/Whatis-OzonSeller-Permissions.html#method_has"
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\BasePackage\u003A\u003Acurrent\u0028\u0029",
+            "name": "current",
+            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0430",
+            "url": "classes/Whatis-OzonSeller-Package-BasePackage.html#method_current"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Permissions\u003A\u003Acontains\u0028\u0029",
-            "name": "contains",
-            "summary": "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C\u0020\u0447\u0442\u043E\u0020\u0432\u0441\u0435\u0020\u043F\u0435\u0440\u0435\u0434\u0430\u043D\u043D\u044B\u0435\n\u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u044F\u0020\u0443\u0441\u0442\u0430\u043D\u043E\u0432\u043B\u0435\u043D\u044B",
-            "url": "classes/Whatis-OzonSeller-Permissions.html#method_contains"
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\BasePackage\u003A\u003Akey\u0028\u0029",
+            "name": "key",
+            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0430",
+            "url": "classes/Whatis-OzonSeller-Package-BasePackage.html#method_key"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Permissions\u003A\u003Aset\u0028\u0029",
-            "name": "set",
-            "summary": "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u043D\u043E\u0432\u044B\u0435\u0020\u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u044F",
-            "url": "classes/Whatis-OzonSeller-Permissions.html#method_set"
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\BasePackage\u003A\u003Anext\u0028\u0029",
+            "name": "next",
+            "summary": "\u041F\u0435\u0440\u0435\u0439\u0442\u0438\u0020\u043A\u0020\u0441\u043B\u0435\u0434\u002D\u043C\u0443\u0020\u043F\u0430\u043A\u0435\u0442\u0443",
+            "url": "classes/Whatis-OzonSeller-Package-BasePackage.html#method_next"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Permissions\u003A\u003Adelete\u0028\u0029",
-            "name": "delete",
-            "summary": "\u0423\u0434\u0430\u043B\u0438\u0442\u044C\u0020\u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u044F\u0020\u0438\u0437\u0020\u0442\u0435\u043A\u0443\u0449\u0438\u0445",
-            "url": "classes/Whatis-OzonSeller-Permissions.html#method_delete"
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\BasePackage\u003A\u003Arewind\u0028\u0029",
+            "name": "rewind",
+            "summary": "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C\u0020\u0443\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u044C",
+            "url": "classes/Whatis-OzonSeller-Package-BasePackage.html#method_rewind"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Permissions\u003A\u003AhasByToken\u0028\u0029",
-            "name": "hasByToken",
-            "summary": "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C\u0020\u0447\u0442\u043E\u0020\u0438\u043C\u0435\u044E\u0442\u0441\u044F\n\u0432\u0441\u0435\u0020\u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u044B\u0435\u0020\u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u044F\n\u0432\u0020\u0442\u043E\u043A\u0435\u043D\u0435",
-            "url": "classes/Whatis-OzonSeller-Permissions.html#method_hasByToken"
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\BasePackage\u003A\u003Avalid\u0028\u0029",
+            "name": "valid",
+            "summary": "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C\u0020\u0447\u0442\u043E\u0020\u043F\u043E\u0434\u0020\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435\u043C\n\u0443\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u044F\u0020\u0435\u0441\u0442\u044C\u0020\u044D\u043B\u0435\u043C\u0435\u043D\u0442",
+            "url": "classes/Whatis-OzonSeller-Package-BasePackage.html#method_valid"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Permissions\u003A\u003A_throwInvalidToken\u0028\u0029",
-            "name": "_throwInvalidToken",
-            "summary": "\u0412\u044B\u0432\u0435\u0441\u0442\u0438\u0020\u043E\u0448\u0438\u0431\u043A\u0443\u0020\u043E\u0020\u0442\u043E\u043C,\u0020\u0447\u0442\u043E\u0020\u043F\u0435\u0440\u0435\u0434\u0430\u043D\n\u043D\u0435\u0432\u0435\u0440\u043D\u044B\u0439\u0020jwt\u0020token",
-            "url": "classes/Whatis-OzonSeller-Permissions.html#method__throwInvalidToken"
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\DefaultPackage",
+            "name": "DefaultPackage",
+            "summary": "\u041F\u0430\u043A\u0435\u0442\u0020\u0441\u0020\u043E\u0441\u043D\u043E\u0432\u043D\u044B\u043C\u0438\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0430\u043C\u0438\u0020\u0431\u0438\u0431\u043B\u0438\u043E\u0442\u0435\u043A\u0438",
+            "url": "classes/Whatis-OzonSeller-Package-DefaultPackage.html"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Permissions\u003A\u003AcreateBitmask\u0028\u0029",
-            "name": "createBitmask",
-            "summary": "\u0421\u0433\u0435\u043D\u0435\u0440\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0020\u0431\u0438\u0442\u043C\u0430\u0441\u043A\u0443",
-            "url": "classes/Whatis-OzonSeller-Permissions.html#method_createBitmask"
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\DefaultPackage\u003A\u003Apackages\u0028\u0029",
+            "name": "packages",
+            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u043F\u0430\u043A\u0435\u0442\u044B",
+            "url": "classes/Whatis-OzonSeller-Package-DefaultPackage.html#method_packages"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Permissions\u003A\u003AgetJwtBitmask\u0028\u0029",
-            "name": "getJwtBitmask",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0431\u0438\u0442\u043C\u0430\u0441\u043A\u0443\u0020\u0438\u0437\u0020\u0442\u043E\u043A\u0435\u043D\u0430",
-            "url": "classes/Whatis-OzonSeller-Permissions.html#method_getJwtBitmask"
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\IPackage",
+            "name": "IPackage",
+            "summary": "\u0418\u043D\u0442\u0435\u0440\u0444\u0435\u0439\u0441\u0020\u0434\u043B\u044F\u0020\u0440\u0435\u0430\u043B\u0438\u0437\u0430\u0446\u0438\u0438\n\u043F\u0430\u043A\u0435\u0442\u043E\u0432\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432",
+            "url": "classes/Whatis-OzonSeller-Package-IPackage.html"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Permissions\u003A\u003AasString\u0028\u0029",
-            "name": "asString",
-            "summary": "\u041F\u0440\u0435\u043E\u0431\u0440\u0430\u0437\u043E\u0432\u0430\u0442\u044C\u0020\u0432\u0020\u0441\u0442\u0440\u043E\u043A\u0443",
-            "url": "classes/Whatis-OzonSeller-Permissions.html#method_asString"
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\IPackage\u003A\u003Acurrent\u0028\u0029",
+            "name": "current",
+            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0430",
+            "url": "classes/Whatis-OzonSeller-Package-IPackage.html#method_current"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Permissions\u003A\u003A\u0024bitmask",
-            "name": "bitmask",
-            "summary": "\u0421\u0444\u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u0430\u044F\u0020\u0431\u0438\u0442\u043C\u0430\u0441\u043A\u0430\u0020\u0438\u0437\n\u043F\u0435\u0440\u0435\u0434\u0430\u043D\u043D\u044B\u0445\u0020\u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u0439",
-            "url": "classes/Whatis-OzonSeller-Permissions.html#property_bitmask"
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\IPackage\u003A\u003Akey\u0028\u0029",
+            "name": "key",
+            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0430",
+            "url": "classes/Whatis-OzonSeller-Package-IPackage.html#method_key"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Permissions\u003A\u003A\u0024permissions",
-            "name": "permissions",
-            "summary": "\u0421\u043F\u0438\u0441\u043E\u043A\u0020\u043F\u0435\u0440\u0435\u0434\u0430\u043D\u043D\u044B\u0445\u0020\u0440\u0430\u0437\u0440\u0435\u0448\u0435\u043D\u0438\u0439",
-            "url": "classes/Whatis-OzonSeller-Permissions.html#property_permissions"
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\IPackage\u003A\u003Anext\u0028\u0029",
+            "name": "next",
+            "summary": "\u041F\u0435\u0440\u0435\u0439\u0442\u0438\u0020\u043A\u0020\u0441\u043B\u0435\u0434\u002D\u043C\u0443\u0020\u043F\u0430\u043A\u0435\u0442\u0443",
+            "url": "classes/Whatis-OzonSeller-Package-IPackage.html#method_next"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\IPackage\u003A\u003Arewind\u0028\u0029",
+            "name": "rewind",
+            "summary": "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C\u0020\u0443\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u044C",
+            "url": "classes/Whatis-OzonSeller-Package-IPackage.html#method_rewind"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\Package\\IPackage\u003A\u003Avalid\u0028\u0029",
+            "name": "valid",
+            "summary": "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C\u0020\u0447\u0442\u043E\u0020\u043F\u043E\u0434\u0020\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435\u043C\n\u0443\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u044F\u0020\u0435\u0441\u0442\u044C\u0020\u044D\u043B\u0435\u043C\u0435\u043D\u0442",
+            "url": "classes/Whatis-OzonSeller-Package-IPackage.html#method_valid"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\Service\\BaseService",
             "name": "BaseService",
-            "summary": "\u0410\u0431\u0441\u0442\u0440\u0430\u043A\u0442\u043D\u044B\u0439\u0020\u043A\u043B\u0430\u0441\u0441\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0430\n\u0434\u043B\u044F\u0020wildberries\u0020api",
+            "summary": "\u0410\u0431\u0441\u0442\u0440\u0430\u043A\u0442\u043D\u044B\u0439\u0020\u043A\u043B\u0430\u0441\u0441\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0430\n\u0434\u043B\u044F\u0020ozon\u0020seller\u0020api",
             "url": "classes/Whatis-OzonSeller-Service-BaseService.html"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\Service\\IService",
@@ -536,34 +391,9 @@ Search.appendIndex(
             "summary": "\u0418\u043D\u0438\u0446\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0430",
             "url": "classes/Whatis-OzonSeller-Service-IService.html#method___construct"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Service\\IService\u003A\u003AwithFormatter\u0028\u0029",
-            "name": "withFormatter",
-            "summary": "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u0440\u043E\u0432\u0449\u0438\u043A",
-            "url": "classes/Whatis-OzonSeller-Service-IService.html#method_withFormatter"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Service\\IService\u003A\u003AgetFormatter\u0028\u0029",
-            "name": "getFormatter",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u0440\u043E\u0432\u0449\u0438\u043A",
-            "url": "classes/Whatis-OzonSeller-Service-IService.html#method_getFormatter"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Service\\IService\u003A\u003AwithRequestFactory\u0028\u0029",
-            "name": "withRequestFactory",
-            "summary": "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u0444\u0430\u0431\u0440\u0438\u043A\u0443\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u043E\u0432",
-            "url": "classes/Whatis-OzonSeller-Service-IService.html#method_withRequestFactory"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Service\\IService\u003A\u003AgetRequestFactory\u0028\u0029",
-            "name": "getRequestFactory",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0444\u0430\u0431\u0440\u0438\u043A\u0443\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u043E\u0432",
-            "url": "classes/Whatis-OzonSeller-Service-IService.html#method_getRequestFactory"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Service\\IService\u003A\u003Arequest\u0028\u0029",
-            "name": "request",
-            "summary": "\u0412\u043E\u0441\u043F\u0440\u043E\u0438\u0437\u0432\u0435\u0441\u0442\u0438\u0020\u0437\u0430\u043F\u0440\u043E\u0441",
-            "url": "classes/Whatis-OzonSeller-Service-IService.html#method_request"
-        },                {
             "fqsen": "\\Whatis\\OzonSeller\\Service\\Payload",
             "name": "Payload",
-            "summary": "\u041A\u043B\u0430\u0441\u0441\u0020\u043F\u043E\u043B\u0435\u0437\u043D\u043E\u0439\u0020\u043D\u0430\u0433\u0440\u0443\u0437\u043A\u0438\n\u0434\u043B\u044F\u0020\u0441\u043E\u0437\u0434\u0430\u043D\u0438\u044F\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u043E\u0432\u0020\u0438\u0437\n\u0441\u0435\u0440\u0432\u0438\u0441\u0430\u0020\u0060IService\u0060",
+            "summary": "\u041A\u043B\u0430\u0441\u0441\u0020\u043F\u043E\u043B\u0435\u0437\u043D\u043E\u0439\u0020\u043D\u0430\u0433\u0440\u0443\u0437\u043A\u0438\n\u0434\u043B\u044F\u0020\u0441\u043E\u0437\u0434\u0430\u043D\u0438\u044F\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u043E\u0432\u0020\u0438\u0437\n\u0441\u0435\u0440\u0432\u0438\u0441\u0430\u0020\u0060BaseService\u0060",
             "url": "classes/Whatis-OzonSeller-Service-Payload.html"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\Service\\Payload\u003A\u003A__construct\u0028\u0029",
@@ -641,26 +471,6 @@ Search.appendIndex(
             "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0431\u0430\u0437\u043E\u0432\u044B\u0439\u0020uri",
             "url": "classes/Whatis-OzonSeller-Service-TService.html#method_basePath"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Service\\TService\u003A\u003AwithFormatter\u0028\u0029",
-            "name": "withFormatter",
-            "summary": "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u0440\u043E\u0432\u0449\u0438\u043A",
-            "url": "classes/Whatis-OzonSeller-Service-TService.html#method_withFormatter"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Service\\TService\u003A\u003AgetFormatter\u0028\u0029",
-            "name": "getFormatter",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0444\u043E\u0440\u043C\u0430\u0442\u0438\u0440\u043E\u0432\u0449\u0438\u043A",
-            "url": "classes/Whatis-OzonSeller-Service-TService.html#method_getFormatter"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Service\\TService\u003A\u003AwithRequestFactory\u0028\u0029",
-            "name": "withRequestFactory",
-            "summary": "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u0444\u0430\u0431\u0440\u0438\u043A\u0443\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u043E\u0432",
-            "url": "classes/Whatis-OzonSeller-Service-TService.html#method_withRequestFactory"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Service\\TService\u003A\u003AgetRequestFactory\u0028\u0029",
-            "name": "getRequestFactory",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0444\u0430\u0431\u0440\u0438\u043A\u0443\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u043E\u0432",
-            "url": "classes/Whatis-OzonSeller-Service-TService.html#method_getRequestFactory"
-        },                {
             "fqsen": "\\Whatis\\OzonSeller\\Service\\TService\u003A\u003Aheaders\u0028\u0029",
             "name": "headers",
             "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0437\u0430\u0433\u043E\u043B\u043E\u0432\u043A\u0438\u0020\u0438\u0437\u0020Payload",
@@ -688,18 +498,13 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor",
             "name": "ServiceCompositor",
-            "summary": "\u041A\u043B\u0430\u0441\u0441\u002D\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u0434\u043B\u044F\u0020\u0440\u0430\u0431\u043E\u0442\u044B\n\u0441\u0020\u0446\u0435\u043D\u0430\u043C\u0438",
+            "summary": "\u041A\u043B\u0430\u0441\u0441\u002D\u043A\u043E\u043C\u043F\u0430\u043D\u043E\u0432\u0449\u0438\u043A\u0020\u0434\u043B\u044F\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432",
             "url": "classes/Whatis-OzonSeller-ServiceCompositor.html"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "\u0421\u043E\u0437\u0434\u0430\u0442\u044C\u0020\u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440",
+            "summary": "\u0421\u043E\u0437\u0434\u0430\u0442\u044C\u0020\u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440n",
             "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method___construct"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003Amake\u0028\u0029",
-            "name": "make",
-            "summary": "\u0421\u043E\u0437\u0434\u0430\u0442\u044C\u0020\u043A\u043E\u043C\u043F\u043E\u0437\u0438\u0442\u043E\u0440",
-            "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method_make"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003Aadd\u0028\u0029",
             "name": "add",
@@ -711,25 +516,35 @@ Search.appendIndex(
             "summary": "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C\u0020\u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E\u0020\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u044B\u0445\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432",
             "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method_count"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003Anames\u0028\u0029",
-            "name": "names",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u043D\u0430\u0437\u0432\u0430\u043D\u0438\u044F\u0020\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u044B\u0445\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432",
-            "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method_names"
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003Acurrent\u0028\u0029",
+            "name": "current",
+            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0430",
+            "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method_current"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003Akey\u0028\u0029",
+            "name": "key",
+            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u043D\u0430\u0437\u0432\u0430\u043D\u0438\u0435\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0430",
+            "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method_key"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003Anext\u0028\u0029",
+            "name": "next",
+            "summary": "\u041F\u0435\u0440\u0435\u0439\u0442\u0438\u0020\u043A\u0020\u0441\u043B\u0435\u0434\u002D\u043C\u0443\u0020\u043F\u0430\u043A\u0435\u0442\u0443",
+            "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method_next"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003Arewind\u0028\u0029",
+            "name": "rewind",
+            "summary": "\u0421\u0431\u0440\u043E\u0441\u0438\u0442\u044C\u0020\u0443\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u044C",
+            "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method_rewind"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003Avalid\u0028\u0029",
+            "name": "valid",
+            "summary": "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C\u0020\u0447\u0442\u043E\u0020\u043F\u043E\u0434\u0020\u043F\u043E\u043B\u043E\u0436\u0435\u043D\u0438\u0435\u043C\n\u0443\u043A\u0430\u0437\u0430\u0442\u0435\u043B\u044F\u0020\u0435\u0441\u0442\u044C\u0020\u044D\u043B\u0435\u043C\u0435\u043D\u0442",
+            "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method_valid"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003A__call\u0028\u0029",
             "name": "__call",
             "summary": "\u0412\u044B\u0437\u043E\u0432\u0020\u043C\u0435\u0442\u043E\u0434\u043E\u0432\u0020\u0438\u0437\u0020\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u044B\u0445\n\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432\u0020\u0028\u0435\u0441\u043B\u0438\u0020\u0435\u0441\u0442\u044C\u0029",
             "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#method___call"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003A\u0024clientId",
-            "name": "clientId",
-            "summary": "\u0418\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430",
-            "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#property_clientId"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003A\u0024token",
-            "name": "token",
-            "summary": "\u0422\u043E\u043A\u0435\u043D",
-            "url": "classes/Whatis-OzonSeller-ServiceCompositor.html#property_token"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\ServiceCompositor\u003A\u003A\u0024services",
             "name": "services",
@@ -743,98 +558,73 @@ Search.appendIndex(
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
-            "summary": "\u0418\u043D\u0438\u0446\u0438\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0020\u0444\u0430\u0441\u0430\u0434",
+            "summary": "\u0418\u043D\u0438\u0446\u0438\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0020\u043C\u0435\u043D\u0435\u0434\u0436\u0435\u0440",
             "url": "classes/Whatis-OzonSeller-ServiceManager.html#method___construct"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003A\u0024mapping",
-            "name": "mapping",
-            "summary": "\u041A\u0430\u0440\u0442\u0430,\u0020\u0441\u0432\u044F\u0437\u044B\u0432\u0430\u044E\u0449\u0430\u044F\u0020\u043F\u0443\u0442\u0438\n\u0434\u043E\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432\u0020\u0028\u0438\u0445\u0020\u0438\u043C\u0435\u043D\u0430\u0029\n\u0438\u0020\u043A\u043B\u0430\u0441\u0441\u044B\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432",
-            "url": "classes/Whatis-OzonSeller-ServiceManager.html#property_mapping"
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003Anew\u0028\u0029",
+            "name": "new",
+            "summary": "\u0421\u043E\u0437\u0434\u0430\u0442\u044C\u0020\u044D\u043A\u0437\u0435\u043C\u043F\u043B\u044F\u0440\u0020\u044D\u0442\u043E\u0433\u043E\u0020\u043A\u043B\u0430\u0441\u0441\u0430\n\u0441\u043E\u0020\u0432\u0441\u0435\u043C\u0438\u0020\u043F\u0430\u0440\u0430\u043C\u0435\u0442\u0440\u0430\u043C\u0438",
+            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_new"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003Aget\u0028\u0029",
-            "name": "get",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u043A\u043B\u0430\u0441\u0441\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0430\u0020\u043F\u043E\u0020\u043D\u0430\u0437\u0432\u0430\u043D\u0438\u044E",
-            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_get"
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003AbyCreds\u0028\u0029",
+            "name": "byCreds",
+            "summary": "\u0421\u043E\u0437\u0434\u0430\u0442\u044C\u0020\u043C\u0435\u043D\u0435\u0434\u0436\u0435\u0440,\u0020\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u044F\u0020\u0434\u0430\u043D\u043D\u044B\u0435\n\u0430\u0432\u0442\u043E\u0440\u0438\u0437\u0430\u0446\u0438\u0438",
+            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_byCreds"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003AgetService\u0028\u0029",
-            "name": "getService",
-            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0438\u043D\u0438\u0446\u0438\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439\u0020\u0441\u0435\u0440\u0432\u0438\u0441\n\u043F\u043E\u0020\u0435\u0433\u043E\u0020\u043D\u0430\u0437\u0432\u0430\u043D\u0438\u044E",
-            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_getService"
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003Aextend\u0028\u0029",
+            "name": "extend",
+            "summary": "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u043D\u043E\u0432\u044B\u0439\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u0028\u0440\u0430\u0441\u0448\u0438\u0440\u0438\u0442\u044C\u0020\u043C\u0435\u043D\u0435\u0434\u0436\u0435\u0440\u0029",
+            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_extend"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003Aset\u0028\u0029",
-            "name": "set",
-            "summary": "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u043D\u043E\u0432\u044B\u0439\u0020\u0441\u0435\u0440\u0432\u0438\u0441",
-            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_set"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003Amake\u0028\u0029",
-            "name": "make",
-            "summary": "\u0421\u043E\u0437\u0434\u0430\u0442\u044C\u0020\u0442\u0435\u043A\u0443\u0449\u0438\u0439\u0020\u043E\u0431\u044A\u0435\u043A\u0442",
-            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_make"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003AcheckServiceExists\u0028\u0029",
-            "name": "checkServiceExists",
-            "summary": "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C\u0020\u0447\u0442\u043E\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u0443\u0436\u0435\u0020\u0438\u043D\u0438\u0446\u0438\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D",
-            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_checkServiceExists"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003Aalias\u0028\u0029",
-            "name": "alias",
-            "summary": "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0020alias\u0020\u043D\u0430\u0020\u0441\u0435\u0440\u0432\u0438\u0441",
-            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_alias"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003AinitNew\u0028\u0029",
-            "name": "initNew",
-            "summary": "\u0418\u043D\u0438\u0446\u0438\u043B\u0438\u0437\u0430\u0446\u0438\u044F\u0020\u043D\u043E\u0432\u043E\u0433\u043E\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0430",
-            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_initNew"
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003Apackage\u0028\u0029",
+            "name": "package",
+            "summary": "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u043F\u043E\u0020\u043F\u0430\u043A\u0435\u0442\u0443",
+            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_package"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003AhasService\u0028\u0029",
             "name": "hasService",
             "summary": "\u041F\u0440\u043E\u0432\u0435\u0440\u0438\u0442\u044C\u0020\u0447\u0442\u043E\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0020\u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0443\u0435\u0442",
             "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_hasService"
         },                {
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003Acreator\u0028\u0029",
+            "name": "creator",
+            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0022\u0433\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440\u0022\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u0430",
+            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_creator"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003Aresolve\u0028\u0029",
+            "name": "resolve",
+            "summary": "\u0420\u0430\u0437\u0440\u0435\u0448\u0438\u0442\u044C\u0020\u0441\u0435\u0440\u0432\u0438\u0441",
+            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_resolve"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003Aservice\u0028\u0029",
+            "name": "service",
+            "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0441\u0435\u0440\u0432\u0438\u0441",
+            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_service"
+        },                {
             "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003Ause\u0028\u0029",
             "name": "use",
-            "summary": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0020\u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0451\u043D\u043D\u044B\u0439\u0020\u0438\u043D\u0438\u0446\u0438\u043B\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0439\n\u0441\u0435\u0440\u0432\u0438\u0441",
+            "summary": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u044C\u0020\u0441\u0435\u0440\u0432\u0438\u0441",
             "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_use"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003AwithFormatter\u0028\u0029",
-            "name": "withFormatter",
-            "summary": "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u0444\u043E\u0440\u043C\u0430\u0442\u0442\u0435\u0440\u0020body",
-            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_withFormatter"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003AwithRequestFactory\u0028\u0029",
-            "name": "withRequestFactory",
-            "summary": "\u0423\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442\u044C\u0020\u0444\u0430\u0431\u0440\u0438\u043A\u0443\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u043E\u0432",
-            "url": "classes/Whatis-OzonSeller-ServiceManager.html#method_withRequestFactory"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003A__call\u0028\u0029",
             "name": "__call",
             "summary": "\u0412\u044B\u0437\u043E\u0432\u0020\u043C\u0435\u0442\u043E\u0434\u043E\u0432\u0020\u0438\u0437\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432",
             "url": "classes/Whatis-OzonSeller-ServiceManager.html#method___call"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003A\u0024clientId",
-            "name": "clientId",
-            "summary": "\u0418\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430",
-            "url": "classes/Whatis-OzonSeller-ServiceManager.html#property_clientId"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003A\u0024token",
-            "name": "token",
-            "summary": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u044B\u0439\u0020\u0442\u043E\u043A\u0435\u043D",
-            "url": "classes/Whatis-OzonSeller-ServiceManager.html#property_token"
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003A\u0024creators",
+            "name": "creators",
+            "summary": "\u0413\u0435\u043D\u0435\u0440\u0430\u0442\u043E\u0440\u044B\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432",
+            "url": "classes/Whatis-OzonSeller-ServiceManager.html#property_creators"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003A\u0024services",
             "name": "services",
             "summary": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u044B\u0435\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u044B",
             "url": "classes/Whatis-OzonSeller-ServiceManager.html#property_services"
         },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003A\u0024aliases",
-            "name": "aliases",
-            "summary": "\u0410\u043B\u0438\u0430\u0441\u044B\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432",
-            "url": "classes/Whatis-OzonSeller-ServiceManager.html#property_aliases"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003A\u0024compositors",
-            "name": "compositors",
-            "summary": "\u0418\u0441\u043F\u043E\u043B\u044C\u0437\u0443\u0435\u043C\u044B\u0435\u0020\u043A\u043E\u043C\u043F\u0430\u043D\u043E\u0432\u0449\u0438\u043A\u0438\u0020\u043F\u043E\n\u043D\u0430\u0437\u0432\u0430\u043D\u0438\u044F\u043C\u0020\u0028\u0430\u043B\u0438\u0430\u0441\u0430\u043C\u0029",
-            "url": "classes/Whatis-OzonSeller-ServiceManager.html#property_compositors"
+            "fqsen": "\\Whatis\\OzonSeller\\ServiceManager\u003A\u003A\u0024client",
+            "name": "client",
+            "summary": "\u041E\u0431\u0449\u0438\u0439\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0020\u0434\u043B\u044F\u0020\u0432\u0441\u0435\u0445\u0020\u0441\u0435\u0440\u0432\u0438\u0441\u043E\u0432",
+            "url": "classes/Whatis-OzonSeller-ServiceManager.html#property_client"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\Utils",
             "name": "Utils",
@@ -1311,6 +1101,16 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/whatis-ozonseller-http.html"
         },                {
+            "fqsen": "\\Whatis\\OzonSeller\\Package",
+            "name": "Package",
+            "summary": "",
+            "url": "namespaces/whatis-ozonseller-package.html"
+        },                {
+            "fqsen": "\\Whatis\\OzonSeller\\Service",
+            "name": "Service",
+            "summary": "",
+            "url": "namespaces/whatis-ozonseller-service.html"
+        },                {
             "fqsen": "\\Whatis\\OzonSeller",
             "name": "OzonSeller",
             "summary": "",
@@ -1320,11 +1120,6 @@ Search.appendIndex(
             "name": "Whatis",
             "summary": "",
             "url": "namespaces/whatis.html"
-        },                {
-            "fqsen": "\\Whatis\\OzonSeller\\Service",
-            "name": "Service",
-            "summary": "",
-            "url": "namespaces/whatis-ozonseller-service.html"
         },                {
             "fqsen": "\\Whatis\\OzonSeller\\V1",
             "name": "V1",

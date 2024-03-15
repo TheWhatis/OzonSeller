@@ -23,7 +23,7 @@ PHP version 8
 Иницилизация клиента
 
 ```php
-public __construct(int $clientId, string $token): mixed
+public __construct(int $clientId, string $token, ?\Whatis\OzonSeller\Http\IJsomFormatter $formatter = null, ?\Psr\Http\Message\RequestFactoryInterface $factory = null): mixed
 ```
 
 
@@ -39,75 +39,8 @@ public __construct(int $clientId, string $token): mixed
 |-----------|------|-------------|
 | `$clientId` | **int** | Идентификатор клиента |
 | `$token` | **string** | Токен ozon seller api |
-
-
-
-
-
-***
-
-### getClientId
-
-Получить идентификатор клиента
-
-```php
-public getClientId(): int
-```
-
-
-
-
-
-
-
-
-
-
-
-
-***
-
-### getToken
-
-Получить токен
-
-```php
-public getToken(): string
-```
-
-
-
-
-
-
-
-
-
-
-
-
-***
-
-### withFormatter
-
-Установить форматтер body
-
-```php
-public withFormatter(\Whatis\OzonSeller\Formatters\IJsonFormatter $formatter): static
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$formatter` | **\Whatis\OzonSeller\Formatters\IJsonFormatter** | Форматер |
+| `$formatter` | **?\Whatis\OzonSeller\Http\IJsomFormatter** | Форматировщик данных |
+| `$factory` | **?\Psr\Http\Message\RequestFactoryInterface** | Фабрика запросов |
 
 
 
@@ -136,57 +69,9 @@ public getFormatter(): \Whatis\OzonSeller\Formatters\IJsonFormatter
 
 ***
 
-### withRequestFactory
-
-Установить фабрику запросов
-
-```php
-public withRequestFactory(\Psr\Http\Message\RequestFactoryInterface $factory): static
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$factory` | **\Psr\Http\Message\RequestFactoryInterface** | Фабрика запросов |
-
-
-
-
-
-***
-
-### getRequestFactory
-
-Получить фабрику запросов
-
-```php
-public getRequestFactory(): \Psr\Http\Message\RequestFactoryInterface
-```
-
-
-
-
-
-
-
-
-
-
-
-
-***
-
 ### request
 
-Выполнить запрос к wb api
+Выполнить запрос к ozon seller api
 
 ```php
 public request(\Whatis\OzonSeller\Http\Payload $payload): \Psr\Http\Message\ResponseInterface
@@ -213,4 +98,4 @@ public request(\Whatis\OzonSeller\Http\Payload $payload): \Psr\Http\Message\Resp
 
 
 ***
-> Automatically generated on 2024-03-12
+> Automatically generated on 2024-03-15

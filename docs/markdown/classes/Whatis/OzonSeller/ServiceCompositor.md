@@ -2,61 +2,29 @@
 
 # ServiceCompositor
 
-Класс-сервис для работы
-с ценами
+Класс-компановщик для сервисов
 
 PHP version 8
 
 * Full name: `\Whatis\OzonSeller\ServiceCompositor`
-* Parent class: [`\Whatis\OzonSeller\Service\BaseService`](./Service/BaseService.md)
 * This class implements:
-[`\Countable`](../../Countable.md)
+[`\Countable`](../../Countable.md), [`\Iterator`](../../Iterator.md)
 
 **See Also:**
 
-* https://github.com/TheWhatis/wb-api-skeleton - 
+* https://github.com/TheWhatis/OzonSeller - 
 
 
 
 ## Properties
 
 
-### clientId
-
-Идентификатор клиента
-
-```php
-protected int $clientId
-```
-
-
-
-
-
-
-***
-
-### token
-
-Токен
-
-```php
-protected string $token
-```
-
-
-
-
-
-
-***
-
 ### services
 
 Набор используемых сервисов
 
 ```php
-protected array&lt;string,\Whatis\OzonSeller\Service\IService&gt; $services
+protected array&lt;int,\Whatis\OzonSeller\Service\IService|\Closure&gt; $services
 ```
 
 
@@ -71,10 +39,10 @@ protected array&lt;string,\Whatis\OzonSeller\Service\IService&gt; $services
 
 ### __construct
 
-Создать композитор
+Создать композиторn
 
 ```php
-public __construct(int $clientId, string $token, array $services = []): mixed
+public __construct(array $services = []): mixed
 ```
 
 
@@ -88,37 +56,6 @@ public __construct(int $clientId, string $token, array $services = []): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$clientId` | **int** | Идентификатор клиента |
-| `$token` | **string** | Токен ozon seller api |
-| `$services` | **array** | Сервисы |
-
-
-
-
-
-***
-
-### make
-
-Создать композитор
-
-```php
-public static make(int $clientId, string $token, array $services = []): static
-```
-
-
-
-* This method is **static**.
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$clientId` | **int** | Идентификатор клиента |
-| `$token` | **string** | Токен ozon seller api |
 | `$services` | **array** | Сервисы |
 
 
@@ -132,7 +69,7 @@ public static make(int $clientId, string $token, array $services = []): static
 Добавить новый сервис в композитор
 
 ```php
-public add(string $name, \Whatis\OzonSeller\Service\IService|string $service): static
+public add(\Whatis\OzonSeller\Service\IService|\Closure $service): static
 ```
 
 
@@ -146,8 +83,7 @@ public add(string $name, \Whatis\OzonSeller\Service\IService|string $service): s
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$name` | **string** | Название сервиса |
-| `$service` | **\Whatis\OzonSeller\Service\IService&#124;string** | Сервис |
+| `$service` | **\Whatis\OzonSeller\Service\IService&#124;\Closure** | Сервис |
 
 
 
@@ -176,12 +112,97 @@ public count(): int
 
 ***
 
-### names
+### current
 
-Получить названия используемых сервисов
+Получить генератор сервиса
 
 ```php
-public names(): array
+public current(): \Whatis\OzonSeller\Service\IService
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### key
+
+Получить название сервиса
+
+```php
+public key(): ?int
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### next
+
+Перейти к след-му пакету
+
+```php
+public next(): void
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### rewind
+
+Сбросить указатель
+
+```php
+public rewind(): void
+```
+
+
+
+
+
+
+
+
+
+
+
+
+***
+
+### valid
+
+Проверить что под положением
+указателя есть элемент
+
+```php
+public valid(): bool
 ```
 
 
@@ -232,285 +253,5 @@ public __call(string $method, array $arguments): mixed
 ***
 
 
-## Inherited methods
-
-
-### __construct
-
-Иницилизация сервиса
-
-```php
-public __construct(int $clientId, string $token): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$clientId` | **int** | Идентификатор клиента |
-| `$token` | **string** | Токен ozon seller api |
-
-
-
-
-
 ***
-
-### domain
-
-Получить домен для обращения
-
-```php
-public static domain(): string
-```
-
-
-
-* This method is **static**.
-
-
-
-
-
-
-
-
-***
-
-### basePath
-
-Получить базовый uri
-
-```php
-public static basePath(): string
-```
-
-
-
-* This method is **static**.
-
-
-
-
-
-
-
-
-***
-
-### withFormatter
-
-Установить форматировщик
-
-```php
-public withFormatter(\Whatis\OzonSeller\Formatters\IJsonFormatter $formatter): static
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$formatter` | **\Whatis\OzonSeller\Formatters\IJsonFormatter** | Форматировщик |
-
-
-
-
-
-***
-
-### getFormatter
-
-Получить форматировщик
-
-```php
-public getFormatter(): \Whatis\OzonSeller\Formatters\IJsonFormatter
-```
-
-
-
-
-
-
-
-
-
-
-
-
-***
-
-### withRequestFactory
-
-Установить фабрику запросов
-
-```php
-public withRequestFactory(\Psr\Http\Message\RequestFactoryInterface $factory): static
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$factory` | **\Psr\Http\Message\RequestFactoryInterface** | Фабрика запросов |
-
-
-
-
-
-***
-
-### getRequestFactory
-
-Получить фабрику запросов
-
-```php
-public getRequestFactory(): \Psr\Http\Message\RequestFactoryInterface
-```
-
-
-
-
-
-
-
-
-
-
-
-
-***
-
-### headers
-
-Получить заголовки из Payload
-
-```php
-protected headers(mixed $payload): array
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$payload` | **mixed** | Полезная нагрузка |
-
-
-
-
-
-***
-
-### params
-
-Получить параметры из Payload
-
-```php
-protected params(mixed $payload): array
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$payload` | **mixed** | Полезная нагрузка |
-
-
-
-
-
-***
-
-### body
-
-Получить тело запроса из Payload
-
-```php
-protected body(mixed $payload): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$payload` | **mixed** | Полезная нагрузка |
-
-
-
-
-
-***
-
-### request
-
-Воспроизвести запрос
-
-```php
-public request(string|\Whatis\OzonSeller\Enums\HttpMethod $method, string $path, mixed $payload = null): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$method` | **string&#124;\Whatis\OzonSeller\Enums\HttpMethod** | Метод |
-| `$path` | **string** | Путь до запроса |
-| `$payload` | **mixed** | Полезная нагрузка запроса |
-
-
-
-
-
-***
-
-
-***
-> Automatically generated on 2024-03-12
+> Automatically generated on 2024-03-15

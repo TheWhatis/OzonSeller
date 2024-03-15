@@ -17,8 +17,7 @@ This is an automatically generated documentation for **Documentation**.
 
 | Class | Description |
 |-------|-------------|
-| [`Permissions`](./classes/Whatis/OzonSeller/Permissions.md) | Интерфейс сервиса|
-| [`ServiceCompositor`](./classes/Whatis/OzonSeller/ServiceCompositor.md) | Класс-сервис для работы<br />с ценами|
+| [`ServiceCompositor`](./classes/Whatis/OzonSeller/ServiceCompositor.md) | Класс-компановщик для сервисов|
 | [`ServiceManager`](./classes/Whatis/OzonSeller/ServiceManager.md) | Класс для управления<br />классами-сервисами<br />для ozon seller api|
 | [`Utils`](./classes/Whatis/OzonSeller/Utils.md) | Класс с вспомогательными методами|
 
@@ -42,9 +41,8 @@ This is an automatically generated documentation for **Documentation**.
 
 | Class | Description |
 |-------|-------------|
-| [`PermissionsDoesNotExistsException`](./classes/Whatis/OzonSeller/Exceptions/PermissionsDoesNotExistsException.md) | Исключение, возникающее<br />когда у токена недостаточно<br />прав для работы с сервисом|
 | [`ServiceAlreadyExists`](./classes/Whatis/OzonSeller/Exceptions/ServiceAlreadyExists.md) | Исключение, возникающее когда<br />сервис уже существует|
-| [`ServiceNotFound`](./classes/Whatis/OzonSeller/Exceptions/ServiceNotFound.md) | Исключение, возникающее<br />когда сервис не найден в<br />менеджере|
+| [`ServiceNotFound`](./classes/Whatis/OzonSeller/Exceptions/ServiceNotFound.md) | Исключение, возникающее когда<br />сервиса не существует|
 
 
 
@@ -83,8 +81,8 @@ This is an automatically generated documentation for **Documentation**.
 
 | Class | Description |
 |-------|-------------|
-| [`BaseClient`](./classes/Whatis/OzonSeller/Http/BaseClient.md) | Абстрактный класс клиента<br />для wildberries api|
-| [`Client`](./classes/Whatis/OzonSeller/Http/Client.md) | Основной класс клиента<br />wildberries api|
+| [`BaseClient`](./classes/Whatis/OzonSeller/Http/BaseClient.md) | Абстрактный класс клиента<br />для api|
+| [`Client`](./classes/Whatis/OzonSeller/Http/Client.md) | Основной класс клиента<br />ozon seller api|
 | [`Payload`](./classes/Whatis/OzonSeller/Http/Payload.md) | Класс полезной нагрузки<br />для создания запросов из<br />клиента `IClient`|
 
 
@@ -104,14 +102,33 @@ This is an automatically generated documentation for **Documentation**.
 
 
 
+### \Whatis\OzonSeller\Package
+
+#### Classes
+
+| Class | Description |
+|-------|-------------|
+| [`BasePackage`](./classes/Whatis/OzonSeller/Package/BasePackage.md) | Файл с абстрактным классом для<br />пакета (с реализацией основных<br />методов)|
+| [`DefaultPackage`](./classes/Whatis/OzonSeller/Package/DefaultPackage.md) | Пакет с основными сервисами библиотеки|
+
+
+
+#### Interfaces
+
+| Interface | Description |
+|-----------|-------------|
+| [`IPackage`](./classes/Whatis/OzonSeller/Package/IPackage.md) | Интерфейс для реализации<br />пакетов сервисов|
+
+
+
 ### \Whatis\OzonSeller\Service
 
 #### Classes
 
 | Class | Description |
 |-------|-------------|
-| [`BaseService`](./classes/Whatis/OzonSeller/Service/BaseService.md) | Абстрактный класс сервиса<br />для wildberries api|
-| [`Payload`](./classes/Whatis/OzonSeller/Service/Payload.md) | Класс полезной нагрузки<br />для создания запросов из<br />сервиса `IService`|
+| [`BaseService`](./classes/Whatis/OzonSeller/Service/BaseService.md) | Абстрактный класс сервиса<br />для ozon seller api|
+| [`Payload`](./classes/Whatis/OzonSeller/Service/Payload.md) | Класс полезной нагрузки<br />для создания запросов из<br />сервиса `BaseService`|
 
 
 #### Traits
@@ -206,4 +223,4 @@ This is an automatically generated documentation for **Documentation**.
 
 
 ***
-> Automatically generated on 2024-03-12
+> Automatically generated on 2024-03-15

@@ -5,9 +5,6 @@
 Атрибут для установки пути
 до api ресурса
 
-Нужен для метода
-ServiceManager::mapping
-
 PHP version 8
 
 * Full name: `\Whatis\OzonSeller\Attribute\Mapping`
@@ -69,4 +66,4 @@ public __construct(string $path): mixed
 
 
 ***
-> Automatically generated on 2024-03-12
+> Automatically generated on 2024-03-15

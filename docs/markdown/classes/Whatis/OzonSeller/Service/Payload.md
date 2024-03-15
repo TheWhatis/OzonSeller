@@ -4,7 +4,7 @@
 
 Класс полезной нагрузки
 для создания запросов из
-сервиса `IService`
+сервиса `BaseService`
 
 PHP version 8
 
@@ -287,4 +287,4 @@ public withHeaders(array $headers): static
 
 
 ***
-> Automatically generated on 2024-03-12
+> Automatically generated on 2024-03-15

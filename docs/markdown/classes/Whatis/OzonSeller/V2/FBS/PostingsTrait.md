@@ -11,7 +11,7 @@ PHP version 8
 
 **See Also:**
 
-* https://github.com/TheWhatis/wb-api-skeleton - 
+* https://github.com/TheWhatis/OzonSeller - 
 
 
 
@@ -373,5 +373,5 @@ public postingsSentBySeller(array $postingNumbers): mixed
 ***
 
 ***
-> Automatically generated on 2024-03-12
+> Automatically generated on 2024-03-15
 

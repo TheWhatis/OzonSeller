@@ -149,4 +149,4 @@ public __construct(\Whatis\OzonSeller\Enums\HttpMethod $method, string $domain, 
 
 
 ***
-> Automatically generated on 2024-03-12
+> Automatically generated on 2024-03-15

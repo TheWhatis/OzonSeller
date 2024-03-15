@@ -194,13 +194,6 @@
 <dd>Иницилизация клиента</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-Http-IClient.html#method_getClientId">getClientId()</a>
-    <span>
-                                &nbsp;: int    </span>
-</dt>
-<dd>Получить идентификатор клиента</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Whatis-OzonSeller-Http-IClient.html#method_getFormatter">getFormatter()</a>
     <span>
                                 &nbsp;: <a href="classes/Whatis-OzonSeller-Formatters-IJsonFormatter.html"><abbr title="\Whatis\OzonSeller\Formatters\IJsonFormatter">IJsonFormatter</abbr></a>    </span>
@@ -208,39 +201,11 @@
 <dd>Получить форматер</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-Http-IClient.html#method_getRequestFactory">getRequestFactory()</a>
-    <span>
-                                &nbsp;: <abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr>    </span>
-</dt>
-<dd>Получить фабрику запросов</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-Http-IClient.html#method_getToken">getToken()</a>
-    <span>
-                                &nbsp;: string    </span>
-</dt>
-<dd>Получить токен</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Whatis-OzonSeller-Http-IClient.html#method_request">request()</a>
     <span>
                                 &nbsp;: <abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>    </span>
 </dt>
-<dd>Выполнить запрос к wb api</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-Http-IClient.html#method_withFormatter">withFormatter()</a>
-    <span>
-                                &nbsp;: static    </span>
-</dt>
-<dd>Установить форматтер body</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-Http-IClient.html#method_withRequestFactory">withRequestFactory()</a>
-    <span>
-                                &nbsp;: static    </span>
-</dt>
-<dd>Установить фабрику запросов</dd>
+<dd>Выполнить запрос к ozon seller api</dd>
 
     </dl>
 
@@ -269,7 +234,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Http/IClient.php"><a href="files/src-http-iclient.html"><abbr title="src/Http/IClient.php">IClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">41</span>
+    <span class="phpdocumentor-element-found-in__line">43</span>
 
     </aside>
 
@@ -277,7 +242,7 @@
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clientId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clientId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Whatis\OzonSeller\Http\IJsomFormatter">IJsomFormatter</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$formatter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$factory</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -302,47 +267,29 @@
 </section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$formatter</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Whatis\OzonSeller\Http\IJsomFormatter">IJsomFormatter</abbr>|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Форматировщик данных</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$factory</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr>|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Фабрика запросов</p>
+</section>
+
+            </dd>
             </dl>
 
     
 
     
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getClientId">
-        getClientId()
-        <a href="classes/Whatis-OzonSeller-Http-IClient.html#method_getClientId" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Http/IClient.php"><a href="files/src-http-iclient.html"><abbr title="src/Http/IClient.php">IClient.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">48</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Получить идентификатор клиента</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getClientId</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">int</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">int</span>
-            </section>
-
 </article>
                     <article
         class="phpdocumentor-element
@@ -358,7 +305,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Http/IClient.php"><a href="files/src-http-iclient.html"><abbr title="src/Http/IClient.php">IClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">71</span>
+    <span class="phpdocumentor-element-found-in__line">55</span>
 
     </aside>
 
@@ -386,78 +333,6 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getRequestFactory">
-        getRequestFactory()
-        <a href="classes/Whatis-OzonSeller-Http-IClient.html#method_getRequestFactory" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Http/IClient.php"><a href="files/src-http-iclient.html"><abbr title="src/Http/IClient.php">IClient.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">89</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Получить фабрику запросов</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getRequestFactory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_getToken">
-        getToken()
-        <a href="classes/Whatis-OzonSeller-Http-IClient.html#method_getToken" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Http/IClient.php"><a href="files/src-http-iclient.html"><abbr title="src/Http/IClient.php">IClient.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">55</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Получить токен</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getToken</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">string</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_request">
         request()
         <a href="classes/Whatis-OzonSeller-Http-IClient.html#method_request" class="headerlink"><i class="fas fa-link"></i></a>
@@ -466,11 +341,11 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Http/IClient.php"><a href="files/src-http-iclient.html"><abbr title="src/Http/IClient.php">IClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">98</span>
+    <span class="phpdocumentor-element-found-in__line">64</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Выполнить запрос к wb api</p>
+        <p class="phpdocumentor-summary">Выполнить запрос к ozon seller api</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
@@ -497,102 +372,6 @@
             <section>
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
         <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_withFormatter">
-        withFormatter()
-        <a href="classes/Whatis-OzonSeller-Http-IClient.html#method_withFormatter" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Http/IClient.php"><a href="files/src-http-iclient.html"><abbr title="src/Http/IClient.php">IClient.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">64</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Установить форматтер body</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withFormatter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Whatis-OzonSeller-Formatters-IJsonFormatter.html"><abbr title="\Whatis\OzonSeller\Formatters\IJsonFormatter">IJsonFormatter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$formatter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$formatter</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Whatis-OzonSeller-Formatters-IJsonFormatter.html"><abbr title="\Whatis\OzonSeller\Formatters\IJsonFormatter">IJsonFormatter</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Форматер</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">static</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_withRequestFactory">
-        withRequestFactory()
-        <a href="classes/Whatis-OzonSeller-Http-IClient.html#method_withRequestFactory" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Http/IClient.php"><a href="files/src-http-iclient.html"><abbr title="src/Http/IClient.php">IClient.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">80</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Установить фабрику запросов</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withRequestFactory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$factory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$factory</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Фабрика запросов</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">static</span>
             </section>
 
 </article>
@@ -709,13 +488,8 @@
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li><a href="classes/Whatis-OzonSeller-Http-IClient.html#method___construct">__construct()</a></li>
-                                                    <li><a href="classes/Whatis-OzonSeller-Http-IClient.html#method_getClientId">getClientId()</a></li>
                                                     <li><a href="classes/Whatis-OzonSeller-Http-IClient.html#method_getFormatter">getFormatter()</a></li>
-                                                    <li><a href="classes/Whatis-OzonSeller-Http-IClient.html#method_getRequestFactory">getRequestFactory()</a></li>
-                                                    <li><a href="classes/Whatis-OzonSeller-Http-IClient.html#method_getToken">getToken()</a></li>
                                                     <li><a href="classes/Whatis-OzonSeller-Http-IClient.html#method_request">request()</a></li>
-                                                    <li><a href="classes/Whatis-OzonSeller-Http-IClient.html#method_withFormatter">withFormatter()</a></li>
-                                                    <li><a href="classes/Whatis-OzonSeller-Http-IClient.html#method_withRequestFactory">withRequestFactory()</a></li>
                                             </ul>
                 </li>
             

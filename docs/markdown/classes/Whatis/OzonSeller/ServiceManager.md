@@ -19,44 +19,12 @@ PHP version 8
 ## Properties
 
 
-### mapping
+### creators
 
-Карта, связывающая пути
-до сервисов (их имена)
-и классы сервисов
+Генераторы сервисов
 
 ```php
-public static array $mapping
-```
-
-
-
-* This property is **static**.
-
-
-***
-
-### clientId
-
-Идентификатор клиента
-
-```php
-protected int $clientId
-```
-
-
-
-
-
-
-***
-
-### token
-
-Используемый токен
-
-```php
-protected string $token
+protected array&lt;string,\Closure&gt; $creators
 ```
 
 
@@ -81,32 +49,15 @@ protected array&lt;int,\Whatis\OzonSeller\Service\IService&gt; $services
 
 ***
 
-### aliases
+### client
 
-Алиасы сервисов
+Общий клиент для всех сервисов
 
 ```php
-protected array&lt;string,string&gt; $aliases
+public \Whatis\OzonSeller\Http\IClient $client
 ```
 
 
-
-
-
-
-***
-
-### compositors
-
-Используемые компановщики по
-названиям (алиасам)
-
-```php
-protected array&lt;string,\Whatis\OzonSeller\ServiceCompositor&gt; $compositors
-```
-
-Используется если алиас привязан
-ко многим сервисам
 
 
 
@@ -118,10 +69,10 @@ protected array&lt;string,\Whatis\OzonSeller\ServiceCompositor&gt; $compositors
 
 ### __construct
 
-Иницилизировать фасад
+Иницилизировать менеджер
 
 ```php
-public __construct(int $clientId, string $token): mixed
+public __construct(\Whatis\OzonSeller\Http\IClient $client): mixed
 ```
 
 
@@ -135,8 +86,7 @@ public __construct(int $clientId, string $token): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$clientId` | **int** | Идентификатор клиента |
-| `$token` | **string** | Токен |
+| `$client` | **\Whatis\OzonSeller\Http\IClient** | Клиент |
 
 
 
@@ -144,33 +94,13 @@ public __construct(int $clientId, string $token): mixed
 
 ***
 
-### mapping
+### new
 
-Получить простую карту сервисов и запросов
-
-```php
-public static mapping(): array
-```
-
-
-
-* This method is **static**.
-
-
-
-
-
-
-
-
-***
-
-### get
-
-Получить класс сервиса по названию
+Создать экземпляр этого класса
+со всеми параметрами
 
 ```php
-public static get(string $name): string
+public static new( $args): static
 ```
 
 
@@ -184,98 +114,21 @@ public static get(string $name): string
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$name` | **string** | Название |
+| `$args` | **** | Аргументы |
 
-
-**Return Value:**
-
-Клаcc сервиса
-
-
-
-**Throws:**
-
-- [`ServiceNotFound`](./Exceptions/ServiceNotFound.md)
-
-
-
-***
-
-### getService
-
-Получить иницилизированный сервис
-по его названию
-
-```php
-public static getService(string $name, int $clientId, string $token): \Whatis\OzonSeller\Service\IService
-```
-
-
-
-* This method is **static**.
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$name` | **string** | Название |
-| `$clientId` | **int** | Идентификатор клиента |
-| `$token` | **string** | Токен |
-
-
-**Return Value:**
-
-Сервис
 
 
 
 
 ***
 
-### set
+### byCreds
 
-Установить новый сервис
-
-```php
-public static set(string $name, string $service): void
-```
-
-
-
-* This method is **static**.
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$name` | **string** | Название |
-| `$service` | **string** | Класс сервиса |
-
-
-
-
-**Throws:**
-
-- [`ServiceAlreadyExists`](./Exceptions/ServiceAlreadyExists.md)
-
-- [`InvalidArgumentException`](../../InvalidArgumentException.md)
-
-
-
-***
-
-### make
-
-Создать текущий объект
+Создать менеджер, используя данные
+авторизации
 
 ```php
-public static make(int $clientId, string $token): static
+public static byCreds(int $clientId, string $token): static
 ```
 
 
@@ -298,12 +151,12 @@ public static make(int $clientId, string $token): static
 
 ***
 
-### checkServiceExists
+### extend
 
-Проверить что сервис уже иницилизирован
+Установить новый сервис (расширить менеджер)
 
 ```php
-protected checkServiceExists(string $name): void
+public extend(string $abstract, \Closure|string $concrete = null): static
 ```
 
 
@@ -317,7 +170,8 @@ protected checkServiceExists(string $name): void
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$name` | **string** | Название |
+| `$abstract` | **string** | Абстрактное название |
+| `$concrete` | **\Closure&#124;string** | Конкретика |
 
 
 
@@ -330,12 +184,12 @@ protected checkServiceExists(string $name): void
 
 ***
 
-### alias
+### package
 
-Установить alias на сервис
+Установить по пакету
 
 ```php
-public alias(string $name, ?string $alias): static
+public package(\Whatis\OzonSeller\Package\IPackage $package): static
 ```
 
 
@@ -349,43 +203,7 @@ public alias(string $name, ?string $alias): static
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$name` | **string** | Название |
-| `$alias` | **?string** | Псевдоним |
-
-
-
-
-**Throws:**
-
-- [`ServiceAlreadyExists`](./Exceptions/ServiceAlreadyExists.md)
-
-- [`ServiceNotFound`](./Exceptions/ServiceNotFound.md)
-
-
-
-***
-
-### initNew
-
-Иницилизация нового сервиса
-
-```php
-public initNew(string $name, ?string $alias = null): static
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$name` | **string** | Название |
-| `$alias` | **?string** | Используемый алиас |
+| `$package` | **\Whatis\OzonSeller\Package\IPackage** | Пакет |
 
 
 
@@ -420,13 +238,102 @@ public hasService(string $name): bool
 
 ***
 
-### use
+### creator
 
-Использовать определённый иницилизированный
-сервис
+Получить "генератор" сервиса
 
 ```php
-public use(string $name): \Whatis\OzonSeller\Service\IService
+public creator(string $name): \Closure
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$name` | **string** | название сервиса |
+
+
+
+
+
+***
+
+### resolve
+
+Разрешить сервис
+
+```php
+protected resolve(string $name): \Whatis\OzonSeller\Service\IService|\Whatis\OzonSeller\ServiceCompositor
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$name` | **string** | Название сервиса |
+
+
+
+
+**Throws:**
+
+- [`ServiceNotFound`](./Exceptions/ServiceNotFound.md)
+
+
+
+***
+
+### service
+
+Получить сервис
+
+```php
+public service(string $name): \Whatis\OzonSeller\Service\IService|\Whatis\OzonSeller\ServiceCompositor
+```
+
+
+
+
+
+
+
+
+**Parameters:**
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `$name` | **string** | название сервиса |
+
+
+**Return Value:**
+
+Сервис
+
+
+
+
+***
+
+### use
+
+Использовать сервис
+
+```php
+public use(string $name): \Whatis\OzonSeller\Service\IService|\Whatis\OzonSeller\ServiceCompositor
 ```
 
 
@@ -446,65 +353,6 @@ public use(string $name): \Whatis\OzonSeller\Service\IService
 **Return Value:**
 
 Сервис
-
-
-
-**Throws:**
-
-- [`ServiceNotFound`](./Exceptions/ServiceNotFound.md)
-
-
-
-***
-
-### withFormatter
-
-Установить форматтер body
-
-```php
-public withFormatter(\Whatis\OzonSeller\Formatters\IJsonFormatter $formatter): static
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$formatter` | **\Whatis\OzonSeller\Formatters\IJsonFormatter** | Форматер |
-
-
-
-
-
-***
-
-### withRequestFactory
-
-Установить фабрику запросов
-
-```php
-public withRequestFactory(\Psr\Http\Message\RequestFactoryInterface $factory): static
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$factory` | **\Psr\Http\Message\RequestFactoryInterface** | Фабрика запросов |
-
 
 
 
@@ -541,4 +389,4 @@ public __call(string $method, array $arguments): mixed
 
 
 ***
-> Automatically generated on 2024-03-12
+> Automatically generated on 2024-03-15

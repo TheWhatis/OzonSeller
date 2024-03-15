@@ -127,7 +127,7 @@
     </aside>
 
             <p class="phpdocumentor-summary">Основной класс клиента
-wildberries api</p>
+ozon seller api</p>
 
     <section class="phpdocumentor-description"><p>PHP version 8</p>
 </section>
@@ -205,20 +205,13 @@ wildberries api</p>
 <dd>Клиент guzzle</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Whatis-OzonSeller-Http-TClient.html#property_clinetId">$clinetId</a>
+    <a href="classes/Whatis-OzonSeller-Http-TClient.html#property_clientId">$clientId</a>
     <span>
                         &nbsp;: int            </span>
 </dt>
 <dd>Идентификатор клиента</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/Whatis-OzonSeller-Http-TClient.html#property_token">$token</a>
-    <span>
-                        &nbsp;: string            </span>
-</dt>
-<dd>Токен</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Whatis-OzonSeller-Http-TClient.html#property_formatter">$formatter</a>
     <span>
                         &nbsp;: <a href="classes/Whatis-OzonSeller-Formatters-IJsonFormatter.html"><abbr title="\Whatis\OzonSeller\Formatters\IJsonFormatter">IJsonFormatter</abbr></a>            </span>
@@ -226,12 +219,19 @@ wildberries api</p>
 <dd>Используемый форматировщик
 тела запроса/ответа</dd>
 
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
     <a href="classes/Whatis-OzonSeller-Http-TClient.html#property_requestFactory">$requestFactory</a>
     <span>
                         &nbsp;: <abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr>            </span>
 </dt>
 <dd>Фабрика запросов</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -public">
+    <a href="classes/Whatis-OzonSeller-Http-TClient.html#property_token">$token</a>
+    <span>
+                        &nbsp;: string            </span>
+</dt>
+<dd>Токен</dd>
 
     </dl>
 
@@ -263,13 +263,6 @@ wildberries api</p>
 <dd>Получить форматер</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-Http-TClient.html#method_getRequestFactory">getRequestFactory()</a>
-    <span>
-                                &nbsp;: <abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr>    </span>
-</dt>
-<dd>Получить фабрику запросов</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Whatis-OzonSeller-Http-TClient.html#method_getToken">getToken()</a>
     <span>
                                 &nbsp;: string    </span>
@@ -282,20 +275,6 @@ wildberries api</p>
                                 &nbsp;: <abbr title="\Psr\Http\Message\ResponseInterface">ResponseInterface</abbr>    </span>
 </dt>
 <dd>Выполнить запрос</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-Http-TClient.html#method_withFormatter">withFormatter()</a>
-    <span>
-                                &nbsp;: static    </span>
-</dt>
-<dd>Установить форматтер body</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Whatis-OzonSeller-Http-TClient.html#method_withRequestFactory">withRequestFactory()</a>
-    <span>
-                                &nbsp;: static    </span>
-</dt>
-<dd>Установить фабрику запросов</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Whatis-OzonSeller-Http-TClient.html#method_headers">headers()</a>
@@ -366,9 +345,9 @@ wildberries api</p>
             -public
                                                 -read-only        "
 >
-    <h4 class="phpdocumentor-element__name" id="property_clinetId">
-        $clinetId
-        <a href="classes/Whatis-OzonSeller-Http-TClient.html#property_clinetId" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="property_clientId">
+        $clientId
+        <a href="classes/Whatis-OzonSeller-Http-TClient.html#property_clientId" class="headerlink"><i class="fas fa-link"></i></a>
 
         <span class="phpdocumentor-element__modifiers">
                         <small class="phpdocumentor-element__modifier">read-only</small>        </span>
@@ -385,7 +364,76 @@ wildberries api</p>
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
         <span class="phpdocumentor-signature__type">int</span>
-    <span class="phpdocumentor-signature__name">$clinetId</span>
+    <span class="phpdocumentor-signature__name">$clientId</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                -read-only        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_formatter">
+        $formatter
+        <a href="classes/Whatis-OzonSeller-Http-TClient.html#property_formatter" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Http/TClient.php"><a href="files/src-http-tclient.html"><abbr title="src/Http/TClient.php">TClient.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">66</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Используемый форматировщик
+тела запроса/ответа</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/Whatis-OzonSeller-Formatters-IJsonFormatter.html"><abbr title="\Whatis\OzonSeller\Formatters\IJsonFormatter">IJsonFormatter</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$formatter</span>
+    </code>
+
+    
+    
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -public
+                                                -read-only        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_requestFactory">
+        $requestFactory
+        <a href="classes/Whatis-OzonSeller-Http-TClient.html#property_requestFactory" class="headerlink"><i class="fas fa-link"></i></a>
+
+        <span class="phpdocumentor-element__modifiers">
+                        <small class="phpdocumentor-element__modifier">read-only</small>        </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/Http/TClient.php"><a href="files/src-http-tclient.html"><abbr title="src/Http/TClient.php">TClient.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">73</span>
+
+    </aside>
+
+        <p class="phpdocumentor-summary">Фабрика запросов</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr></span>
+    <span class="phpdocumentor-signature__name">$requestFactory</span>
     </code>
 
     
@@ -427,75 +475,6 @@ wildberries api</p>
     
 
 </article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_formatter">
-        $formatter
-        <a href="classes/Whatis-OzonSeller-Http-TClient.html#property_formatter" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Http/TClient.php"><a href="files/src-http-tclient.html"><abbr title="src/Http/TClient.php">TClient.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">66</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Используемый форматировщик
-тела запроса/ответа</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/Whatis-OzonSeller-Formatters-IJsonFormatter.html"><abbr title="\Whatis\OzonSeller\Formatters\IJsonFormatter">IJsonFormatter</abbr></a></span>
-    <span class="phpdocumentor-signature__name">$formatter</span>
-    </code>
-
-    
-    
-    
-
-</article>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -protected
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="property_requestFactory">
-        $requestFactory
-        <a href="classes/Whatis-OzonSeller-Http-TClient.html#property_requestFactory" class="headerlink"><i class="fas fa-link"></i></a>
-
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Http/TClient.php"><a href="files/src-http-tclient.html"><abbr title="src/Http/TClient.php">TClient.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">73</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Фабрика запросов</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr></span>
-    <span class="phpdocumentor-signature__name">$requestFactory</span>
-    </code>
-
-    
-    
-    
-
-</article>
             </section>
 
             <section class="phpdocumentor-methods">
@@ -518,7 +497,7 @@ wildberries api</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Http/TClient.php"><a href="files/src-http-tclient.html"><abbr title="src/Http/TClient.php">TClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">81</span>
+    <span class="phpdocumentor-element-found-in__line">83</span>
 
     </aside>
 
@@ -526,7 +505,7 @@ wildberries api</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clientId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                    <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">int&nbsp;</span><span class="phpdocumentor-signature__argument__name">$clientId</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$token</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Whatis\OzonSeller\Http\IJsomFormatter">IJsomFormatter</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$formatter</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr>|null&nbsp;</span><span class="phpdocumentor-signature__argument__name">$factory</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     <div class="phpdocumentor-label-line">
         </div>
@@ -551,6 +530,24 @@ wildberries api</p>
 </section>
 
             </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$formatter</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Whatis\OzonSeller\Http\IJsomFormatter">IJsomFormatter</abbr>|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Форматировщик данных</p>
+</section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$factory</span>
+                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr>|null</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Фабрика запросов</p>
+</section>
+
+            </dd>
             </dl>
 
     
@@ -571,7 +568,7 @@ wildberries api</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Http/TClient.php"><a href="files/src-http-tclient.html"><abbr title="src/Http/TClient.php">TClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 
     </aside>
 
@@ -607,7 +604,7 @@ wildberries api</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Http/TClient.php"><a href="files/src-http-tclient.html"><abbr title="src/Http/TClient.php">TClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">128</span>
+    <span class="phpdocumentor-element-found-in__line">122</span>
 
     </aside>
 
@@ -635,42 +632,6 @@ wildberries api</p>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_getRequestFactory">
-        getRequestFactory()
-        <a href="classes/Whatis-OzonSeller-Http-TClient.html#method_getRequestFactory" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Http/TClient.php"><a href="files/src-http-tclient.html"><abbr title="src/Http/TClient.php">TClient.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">151</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Получить фабрику запросов</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">getRequestFactory</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr></span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-    
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type"><abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr></span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_getToken">
         getToken()
         <a href="classes/Whatis-OzonSeller-Http-TClient.html#method_getToken" class="headerlink"><i class="fas fa-link"></i></a>
@@ -679,7 +640,7 @@ wildberries api</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Http/TClient.php"><a href="files/src-http-tclient.html"><abbr title="src/Http/TClient.php">TClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">105</span>
+    <span class="phpdocumentor-element-found-in__line">112</span>
 
     </aside>
 
@@ -715,7 +676,7 @@ wildberries api</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Http/TClient.php"><a href="files/src-http-tclient.html"><abbr title="src/Http/TClient.php">TClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">202</span>
+    <span class="phpdocumentor-element-found-in__line">173</span>
 
     </aside>
 
@@ -752,102 +713,6 @@ wildberries api</p>
                     <article
         class="phpdocumentor-element
             -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_withFormatter">
-        withFormatter()
-        <a href="classes/Whatis-OzonSeller-Http-TClient.html#method_withFormatter" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Http/TClient.php"><a href="files/src-http-tclient.html"><abbr title="src/Http/TClient.php">TClient.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">117</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Установить форматтер body</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withFormatter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/Whatis-OzonSeller-Formatters-IJsonFormatter.html"><abbr title="\Whatis\OzonSeller\Formatters\IJsonFormatter">IJsonFormatter</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$formatter</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$formatter</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/Whatis-OzonSeller-Formatters-IJsonFormatter.html"><abbr title="\Whatis\OzonSeller\Formatters\IJsonFormatter">IJsonFormatter</abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Форматер</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">static</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_withRequestFactory">
-        withRequestFactory()
-        <a href="classes/Whatis-OzonSeller-Http-TClient.html#method_withRequestFactory" class="headerlink"><i class="fas fa-link"></i></a>
-
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="src/Http/TClient.php"><a href="files/src-http-tclient.html"><abbr title="src/Http/TClient.php">TClient.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">140</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Установить фабрику запросов</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                    <span class="phpdocumentor-signature__name">withRequestFactory</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$factory</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">static</span></code>
-
-    <div class="phpdocumentor-label-line">
-        </div>
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$factory</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><abbr title="\Psr\Http\Message\RequestFactoryInterface">RequestFactoryInterface</abbr></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Фабрика запросов</p>
-</section>
-
-            </dd>
-            </dl>
-
-    
-
-            <section>
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-        <span class="phpdocumentor-signature__response_type">static</span>
-            </section>
-
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
             -protected
                                                         "
 >
@@ -859,7 +724,7 @@ wildberries api</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Http/TClient.php"><a href="files/src-http-tclient.html"><abbr title="src/Http/TClient.php">TClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">176</span>
+    <span class="phpdocumentor-element-found-in__line">147</span>
 
     </aside>
 
@@ -905,7 +770,7 @@ wildberries api</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="src/Http/TClient.php"><a href="files/src-http-tclient.html"><abbr title="src/Http/TClient.php">TClient.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">134</span>
 
     </aside>
 
@@ -1053,10 +918,10 @@ wildberries api</p>
                 <li>
                     <ul class="phpdocumentor-list -clean">
                                                     <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#property_client">$client<a href="classes/Whatis-OzonSeller-Http-Client.html"></li>
-                                                    <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#property_clinetId">$clinetId<a href="classes/Whatis-OzonSeller-Http-Client.html"></li>
-                                                    <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#property_token">$token<a href="classes/Whatis-OzonSeller-Http-Client.html"></li>
+                                                    <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#property_clientId">$clientId<a href="classes/Whatis-OzonSeller-Http-Client.html"></li>
                                                     <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#property_formatter">$formatter<a href="classes/Whatis-OzonSeller-Http-Client.html"></li>
                                                     <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#property_requestFactory">$requestFactory<a href="classes/Whatis-OzonSeller-Http-Client.html"></li>
+                                                    <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#property_token">$token<a href="classes/Whatis-OzonSeller-Http-Client.html"></li>
                                             </ul>
                 </li>
             
@@ -1066,11 +931,8 @@ wildberries api</p>
                                             <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#method___construct">__construct()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#method_getClientId">getClientId()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#method_getFormatter">getFormatter()</a></li>
-                                            <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#method_getRequestFactory">getRequestFactory()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#method_getToken">getToken()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#method_request">request()</a></li>
-                                            <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#method_withFormatter">withFormatter()</a></li>
-                                            <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#method_withRequestFactory">withRequestFactory()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#method_headers">headers()</a></li>
                                             <li><a href="classes/Whatis-OzonSeller-Http-TClient.html#method_uri">uri()</a></li>
                                     </ul>

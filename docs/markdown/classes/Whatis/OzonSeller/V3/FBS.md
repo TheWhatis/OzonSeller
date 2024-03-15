@@ -12,7 +12,7 @@ PHP version 8
 
 **See Also:**
 
-* https://github.com/TheWhatis/wb-api-skeleton - 
+* https://github.com/TheWhatis/OzonSeller - 
 
 
 
@@ -186,7 +186,7 @@ public returns(array $filter, int $limit, int $lastId): mixed
 Иницилизация сервиса
 
 ```php
-public __construct(int $clientId, string $token): mixed
+public __construct(\Whatis\OzonSeller\Http\IClient $client): mixed
 ```
 
 
@@ -200,8 +200,7 @@ public __construct(int $clientId, string $token): mixed
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `$clientId` | **int** | Идентификатор клиента |
-| `$token` | **string** | Токен ozon seller api |
+| `$client` | **\Whatis\OzonSeller\Http\IClient** | Клиент |
 
 
 
@@ -241,102 +240,6 @@ public static basePath(): string
 
 
 * This method is **static**.
-
-
-
-
-
-
-
-
-***
-
-### withFormatter
-
-Установить форматировщик
-
-```php
-public withFormatter(\Whatis\OzonSeller\Formatters\IJsonFormatter $formatter): static
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$formatter` | **\Whatis\OzonSeller\Formatters\IJsonFormatter** | Форматировщик |
-
-
-
-
-
-***
-
-### getFormatter
-
-Получить форматировщик
-
-```php
-public getFormatter(): \Whatis\OzonSeller\Formatters\IJsonFormatter
-```
-
-
-
-
-
-
-
-
-
-
-
-
-***
-
-### withRequestFactory
-
-Установить фабрику запросов
-
-```php
-public withRequestFactory(\Psr\Http\Message\RequestFactoryInterface $factory): static
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `$factory` | **\Psr\Http\Message\RequestFactoryInterface** | Фабрика запросов |
-
-
-
-
-
-***
-
-### getRequestFactory
-
-Получить фабрику запросов
-
-```php
-public getRequestFactory(): \Psr\Http\Message\RequestFactoryInterface
-```
-
-
-
-
 
 
 
@@ -459,4 +362,4 @@ public request(string|\Whatis\OzonSeller\Enums\HttpMethod $method, string $path,
 
 
 ***
-> Automatically generated on 2024-03-12
+> Automatically generated on 2024-03-15

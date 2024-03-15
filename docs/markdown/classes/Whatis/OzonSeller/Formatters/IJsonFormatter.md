@@ -104,4 +104,4 @@ public decode(string $content): mixed
 
 
 ***
-> Automatically generated on 2024-03-12
+> Automatically generated on 2024-03-15
