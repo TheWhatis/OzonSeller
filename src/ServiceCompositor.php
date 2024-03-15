@@ -1,11 +1,10 @@
 <?php
 /**
- * Файл с классом-сервисом для
- * работы с ценами
+ * Файл с классом-компановщиком для сервисов
  *
  * PHP version 8
  *
- * @category V3
+ * @category Main
  * @package  OzonSeller
  * @author   Whatis <anton-gogo@mail.ru>
  * @license  unlicense
@@ -16,95 +15,53 @@ namespace Whatis\OzonSeller;
 
 use Whatis\OzonSeller\Service\IService;
 use Whatis\OzonSeller\Service\BaseService;
+
 use Countable;
+use Iterator;
+use Closure;
 
 /**
- * Класс-сервис для работы
- * с ценами
+ * Класс-компановщик для сервисов
  *
  * PHP version 8
  *
- * @category V3
+ * @category Main
  * @package  OzonSeller
  * @author   Whatis <anton-gogo@mail.ru>
  * @license  unlicense
  * @link     https://github.com/TheWhatis/wb-api-skeleton
  */
-class ServiceCompositor extends BaseService implements Countable
+class ServiceCompositor implements Countable, Iterator
 {
-    /**
-     * Идентификатор клиента
-     *
-     * @var int
-     */
-    protected readonly int $clientId;
-
-    /**
-     * Токен
-     *
-     * @var string
-     */
-    protected readonly string $token;
-
     /**
      * Набор используемых сервисов
      *
-     * @var array<string, IService>
+     * @var array<int, IService|Closure>
      */
     protected array $services = [];
 
     /**
-     * Создать композитор
+     * Создать композиторn
      *
-     * @param int    $clientId Идентификатор клиента
-     * @param string $token    Токен ozon seller api
-     * @param array  $services Сервисы
+     * @param array $services Сервисы
      */
-    public function __construct(int $clientId, string $token, array $services = [])
+    public function __construct(array $services = [])
     {
-        parent::__construct($clientId, $token);
-        $this->clientId = $clientId;
-        $this->token = $token;
-        foreach ($services as $name => $service) {
-            $this->add($name, $service);
+        foreach ($services as $service) {
+            $this->add($service);
         }
-    }
-
-    /**
-     * Создать композитор
-     *
-     * @param int    $clientId Идентификатор клиента
-     * @param string $token    Токен ozon seller api
-     * @param array  $services Сервисы
-     *
-     * @return static
-     */
-    public static function make(int $clientId, string $token, array $services = [])
-    {
-        return new static($clientId, $token, $services);
     }
 
     /**
      * Добавить новый сервис в композитор
      *
-     * @param string          $name    Название сервиса
-     * @param IService|string $service Сервис
+     * @param IService|Closure $service Сервис
      *
      * @return static
      */
-    public function add(string $name, IService|string $service): static
+    public function add(IService|Closure $service): static
     {
-        if (is_string($service)) {
-            if (!is_a($service, IService::class, true)) {
-                throw new InvalidArgumentException(sprintf(
-                    'Argument service must be implements [%s]', IService::class
-                ));
-            }
-
-            $service = new $service($this->clientId, $this->token);
-        }
-
-        $this->services[$name] = $service;
+        $this->services[] = $service;
         return $this;
     }
 
@@ -119,13 +76,59 @@ class ServiceCompositor extends BaseService implements Countable
     }
 
     /**
-     * Получить названия используемых сервисов
+     * Получить генератор сервиса
      *
-     * @return array
+     * @return IService
      */
-    public function names(): array
+    public function current(): IService
     {
-        return array_keys($this->services);
+        $key = key($this->services);
+        if ($this->services[$key] instanceof IService) {
+            return $this->services[$key];
+        }
+
+        return $this->services[$key] = $this->services[$key]();
+    }
+
+    /**
+     * Получить название сервиса
+     *
+     * @return ?int
+     */
+    public function key(): ?int
+    {
+        return key($this->services);
+    }
+
+    /**
+     * Перейти к след-му пакету
+     *
+     * @return void
+     */
+    public function next(): void
+    {
+        next($this->services);
+    }
+
+    /**
+     * Сбросить указатель
+     *
+     * @return void
+     */
+    public function rewind(): void
+    {
+        reset($this->services);
+    }
+
+    /**
+     * Проверить что под положением
+     * указателя есть элемент
+     *
+     * @return bool
+     */
+    public function valid(): bool
+    {
+        return !is_null($this->key());
     }
 
     /**
@@ -140,7 +143,7 @@ class ServiceCompositor extends BaseService implements Countable
      */
     public function __call($method, $arguments)
     {
-        foreach ($this->services as $service) {
+        foreach ($this as $service) {
             if (method_exists($service, $method)) {
                 return $service->$method(...$arguments);
             }
