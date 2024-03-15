@@ -55,7 +55,7 @@ interface IClient
     public function getFormatter(): IJsonFormatter;
 
     /**
-     * Выполнить запрос к wb api
+     * Выполнить запрос к ozon seller api
      *
      * @param Payload $payload Данные (полезная нагрузка)
      *

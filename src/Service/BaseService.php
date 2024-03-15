@@ -1,7 +1,7 @@
 <?php
 /**
  * Файл с абстрактным классом
- * сервиса для wildberries api
+ * сервиса для ozon seller api
  *
  * PHP version 8
  *
@@ -16,7 +16,7 @@ namespace Whatis\OzonSeller\Service;
 
 /**
  * Абстрактный класс сервиса
- * для wildberries api
+ * для ozon seller api
  *
  * PHP version 8
  *

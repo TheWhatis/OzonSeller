@@ -9,7 +9,7 @@
  * @package  OzonSeller
  * @author   Whatis <anton-gogo@mail.ru>
  * @license  unlicense
- * @link     https://github.com/TheWhatis/wb-api-skeleton
+ * @link     https://github.com/TheWhatis/OzonSeller
  */
 
 namespace Whatis\OzonSeller\V5;
@@ -27,7 +27,7 @@ use Whatis\OzonSeller\Attribute\Mapping;
  * @package  OzonSeller
  * @author   Whatis <anton-gogo@mail.ru>
  * @license  unlicense
- * @link     https://github.com/TheWhatis/wb-api-skeleton
+ * @link     https://github.com/TheWhatis/OzonSeller
  */
 class FBS extends BaseService
 {

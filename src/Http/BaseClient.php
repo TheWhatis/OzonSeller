@@ -24,7 +24,7 @@ namespace Whatis\OzonSeller\Http;
  * @package  OzonSeller
  * @author   Whatis <anton-gogo@mail.ru>
  * @license  unlicense
- * @link     https://github.com/TheWhatis/WBApiSkeleton
+ * @link     https://github.com/TheWhatis/OzonSeller
  */
 abstract class BaseClient implements IClient
 {

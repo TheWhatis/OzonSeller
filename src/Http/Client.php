@@ -1,7 +1,7 @@
 <?php
 /**
  * Файл с основным классом
- * клиента wildberries api
+ * клиента ozon seller api
  *
  * PHP version 8
  *
@@ -16,7 +16,7 @@ namespace Whatis\OzonSeller\Http;
 
 /**
  * Основной класс клиента
- * wildberries api
+ * ozon seller api
  *
  * PHP version 8
  *
